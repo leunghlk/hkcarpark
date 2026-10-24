@@ -25,7 +25,6 @@ main{max-width:760px;margin:0 auto;padding:0 12px 48px}
 header{max-width:760px;margin:0 auto;padding:18px 12px 10px;display:flex;align-items:baseline;gap:10px}
 header h1{font-size:20px;margin:0;white-space:nowrap}
 header .sub{color:var(--ink2);font-size:12.5px}
-header .home{margin-left:auto;text-decoration:none;font-size:15px;color:var(--ink2)}
 
 .panel{background:var(--surface);border:1px solid var(--ring);border-radius:14px;padding:12px;margin-top:8px}
 .search-row{display:flex;gap:8px}
@@ -65,11 +64,26 @@ header .home{margin-left:auto;text-decoration:none;font-size:15px;color:var(--in
 .malltag{display:inline-block;margin-left:6px;font-size:11px;background:var(--page);border:1px solid var(--line);
   border-radius:6px;padding:1px 6px;color:var(--ink2);vertical-align:2px}
 .badge{margin-left:auto;flex-shrink:0;padding:4px 10px;border-radius:999px;font-size:12.5px;font-weight:600;white-space:nowrap}
-.badge.good{background:var(--good);color:#fff}
-.badge.warn{background:var(--warn);color:#0b0b0b}
-.badge.serious{background:var(--serious);color:#fff}
-.badge.critical{background:var(--critical);color:#fff}
+.badge.good{background:var(--good);color:#fff;box-shadow:0 0 12px rgba(12,163,12,.5)}
+.badge.warn{background:var(--warn);color:#0b0b0b;box-shadow:0 0 12px rgba(250,178,25,.4)}
+.badge.serious{background:var(--serious);color:#fff;box-shadow:0 0 12px rgba(236,131,90,.45)}
+.badge.critical{background:var(--critical);color:#fff;box-shadow:0 0 12px rgba(208,59,59,.45)}
 .badge.none{background:var(--page);color:var(--muted);border:1px solid var(--line)}
+.recent{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;align-items:center;font-size:12px;color:var(--muted)}
+.recent:empty{display:none}
+.rchip{padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:var(--page);
+  cursor:pointer;font-size:12.5px;color:var(--ink2)}
+.rchip:hover{color:var(--ink);border-color:var(--muted)}
+/* map: destination label + live-marker glow (著燈) */
+.leaflet-tooltip.dest-label{background:var(--ink);color:var(--surface);border:0;border-radius:9px;
+  font-weight:700;font-size:12.5px;padding:4px 10px;box-shadow:0 3px 10px rgba(0,0,0,.3)}
+.leaflet-tooltip.dest-label::before{display:none}
+@keyframes mkpulse{0%,100%{filter:drop-shadow(0 0 2px var(--mk))}50%{filter:drop-shadow(0 0 10px var(--mk))}}
+svg path.mk-live{animation:mkpulse 2s ease-in-out infinite}
+svg path.mk-good{--mk:#0ca30c}
+svg path.mk-warn{--mk:#fab219}
+svg path.mk-serious{--mk:#ec835a}
+svg path.mk-crit{--mk:#d03b3b}
 .row2{color:var(--ink2);font-size:13px;margin-top:6px}
 .row2 .d{color:var(--accent);font-weight:600}
 .fees{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
@@ -97,7 +111,6 @@ footer a{color:var(--muted)}
 <header>
   <h1>🅿️ 實時停車場</h1>
   <span class="sub">港九新界 · 時租／消費免泊 · 即時車位</span>
-  <a class="home" href="https://leunghlk.github.io/all-in-one/" title="返回主頁">🏠</a>
 </header>
 <main>
   <section class="panel">
@@ -106,6 +119,7 @@ footer a{color:var(--muted)}
       <button id="locbtn" title="用我嘅位置">📍</button>
     </div>
     <div id="suggest"></div>
+    <div class="recent" id="recent"></div>
     <div class="controls">
       <div class="chips" id="radiusChips"></div>
       <div class="chips" id="filterChips"></div>
@@ -143,7 +157,7 @@ const STALE_MIN = 120;
 const WALK_SPEED = 80; // m per min
 
 let PARKS = [], VAC = {}, dest = null, radius = 1000, filter = 'all', sortBy = 'dist';
-let map, markerLayer, destMarker, lastFetch = null, vacTimer = null;
+let map, markerLayer, destMarker, lastFetch = null, vacTimer = null, lastPts = null;
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -284,19 +298,30 @@ function render(){
 function renderMap(arr){
   if(!map){
     map = L.map('map', { zoomControl: true });
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OpenStreetMap' }).addTo(map);
+    const gTiles = L.tileLayer('https://mt{s}.google.com/vt/lyrs=m&hl=zh-TW&x={x}&y={y}&z={z}',
+      { subdomains: ['0','1','2','3'], maxZoom: 20, attribution: '© Google' });
+    let tileFails = 0, swapped = false;
+    gTiles.on('tileerror', () => {   // unofficial Google tiles — fall back to OSM if blocked
+      if(swapped || ++tileFails < 8) return;
+      swapped = true; map.removeLayer(gTiles);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OpenStreetMap' }).addTo(map);
+    });
+    gTiles.addTo(map);
     markerLayer = L.layerGroup().addTo(map);
   }
-  setTimeout(() => map.invalidateSize(), 50);
   markerLayer.clearLayers();
   if(destMarker){ map.removeLayer(destMarker); destMarker = null; }
   if(!dest) return;
   const colors = { good:'#0ca30c', warn:'#fab219', serious:'#ec835a', critical:'#d03b3b', none:'#898781' };
   const pts = [[dest.lat, dest.lng]];
-  destMarker = L.marker([dest.lat, dest.lng], { icon: L.divIcon({ html:'📍', className:'', iconSize:[26,26], iconAnchor:[13,24] }) }).addTo(map);
+  destMarker = L.marker([dest.lat, dest.lng], {
+    icon: L.divIcon({ html:'📍', className:'', iconSize:[26,26], iconAnchor:[13,24] }), zIndexOffset: 1000
+  }).addTo(map);
+  destMarker.bindTooltip('📍 ' + dest.name, { permanent:true, direction:'top', offset:[0,-16], className:'dest-label' });
+  const glowCls = { good:'mk-live mk-good', warn:'mk-live mk-warn', serious:'mk-live mk-serious', critical:'mk-live mk-crit', none:'' };
   for(const x of arr.slice(0, 40)){
     const vi = vacInfo(x.c), name = x.c.name_tc || x.c.name_en;
-    const m = L.circleMarker([x.c.lat, x.c.lng], { radius:9, color:'#fcfcfb', weight:2, fillColor:colors[vi.cls], fillOpacity:.95 });
+    const m = L.circleMarker([x.c.lat, x.c.lng], { radius:9, color:'#fcfcfb', weight:2, fillColor:colors[vi.cls], fillOpacity:.95, className: glowCls[vi.cls] });
     m.bindTooltip('<b>' + esc(name) + '</b><br>' + vi.text + ' · ' + distTxt(x.d));
     m.bindPopup('<b>' + esc(name) + '</b><br>' + vi.text + '<br>' +
       (x.c.hourly ? '🕐 時租 ' + esc(x.c.hourly) + '<br>' : '') +
@@ -305,7 +330,9 @@ function renderMap(arr){
     m.addTo(markerLayer);
     pts.push([x.c.lat, x.c.lng]);
   }
-  map.fitBounds(L.latLngBounds(pts).pad(0.25));
+  // fit only after the container has a real size (first show / toggle)
+  lastPts = pts;
+  setTimeout(() => { map.invalidateSize(); map.fitBounds(L.latLngBounds(pts).pad(0.25)); }, 60);
 }
 
 /* ---------- search ---------- */
@@ -316,20 +343,31 @@ $('#q').addEventListener('input', e => {
   if(q.length < 2){ $('#suggest').innerHTML = ''; return; }
   sugTimer = setTimeout(() => suggest(q), 280);
 });
+$('#q').addEventListener('keydown', e => {
+  if(e.key !== 'Enter') return;
+  const first = $('#suggest .sug button');
+  if(first){ first.click(); return; }
+  const q = $('#q').value.trim();
+  if(q) goSearch(q);
+});
+const HK_BBOX = [113.80, 22.10, 114.50, 22.65]; // lon min, lat min, lon max, lat max
+const inHK = (lat, lng) => lat >= HK_BBOX[1] && lat <= HK_BBOX[3] && lng >= HK_BBOX[0] && lng <= HK_BBOX[2];
+const photonUrl = (q, limit) => 'https://photon.komoot.io/api/?q=' + encodeURIComponent(q) +
+  '&lat=' + (dest ? dest.lat : 22.35) + '&lon=' + (dest ? dest.lng : 114.15) +
+  '&bbox=' + HK_BBOX.join(',') + '&limit=' + limit + '&lang=default';
+
 async function suggest(q){
   if(sugCtl) sugCtl.abort();
   sugCtl = new AbortController();
   const local = localMatches(q);
   try{
-    const r = await fetch('https://photon.komoot.io/api/?q=' + encodeURIComponent(q) +
-      '&lat=' + (dest ? dest.lat : 22.35) + '&lon=' + (dest ? dest.lng : 114.15) +
-      '&limit=8&lang=default', { signal: sugCtl.signal });
+    const r = await fetch(photonUrl(q, 8), { signal: sugCtl.signal });
     const j = await r.json();
     const remote = (j.features || []).map(f => ({
       name: f.properties.name || q,
       sub: [f.properties.street, f.properties.district, f.properties.city].filter(Boolean).join(' · '),
       lat: f.geometry.coordinates[1], lng: f.geometry.coordinates[0]
-    })).filter(p => p.lat && p.lng);
+    })).filter(p => p.lat && p.lng && inHK(p.lat, p.lng));
     showSug(remote.map(p => ({...p, icon:'📍'})).concat(local));
   }catch(err){
     if(err.name !== 'AbortError') showSug(local);
@@ -356,7 +394,46 @@ document.addEventListener('click', e => { if(!e.target.closest('#suggest') && !e
 function setDest(d){
   dest = d;
   $('#q').value = d.name;
+  pushRecent(d);
   render();
+}
+
+/* ---------- recent searches (max 10, 新 cover 舊) ---------- */
+const RS_KEY = 'hkcp_recent';
+function getRecent(){
+  try{ return JSON.parse(localStorage.getItem(RS_KEY) || '[]'); }catch(e){ return []; }
+}
+function pushRecent(d){
+  let arr = getRecent().filter(x => x.name !== d.name);
+  arr.unshift({ name: d.name, lat: d.lat, lng: d.lng });
+  localStorage.setItem(RS_KEY, JSON.stringify(arr.slice(0, 10)));
+  renderRecent();
+}
+function renderRecent(){
+  const arr = getRecent();
+  const el = $('#recent');
+  if(!arr.length){ el.innerHTML = ''; return; }
+  el.innerHTML = '<span>🕐</span>' + arr.map((r, i) => '<button class="rchip" data-i="' + i + '">' + esc(r.name) + '</button>').join('');
+  el.querySelectorAll('.rchip').forEach(b => b.addEventListener('click', () => {
+    const r = arr[+b.dataset.i];
+    setDest({ name: r.name, lat: r.lat, lng: r.lng });
+  }));
+}
+
+/* ---------- Enter = 直搜（自動揀第一個結果） ---------- */
+async function goSearch(q){
+  const local = localMatches(q)[0];
+  if(local) return setDest({ name: local.name, lat: local.lat, lng: local.lng });
+  if(sugCtl) sugCtl.abort();
+  sugCtl = new AbortController();
+  try{
+    const r = await fetch(photonUrl(q, 1), { signal: sugCtl.signal });
+    const j = await r.json();
+    const f = j.features && j.features[0];
+    if(f && f.geometry && inHK(f.geometry.coordinates[1], f.geometry.coordinates[0]))
+      setDest({ name: (f.properties && f.properties.name) || q, lat: f.geometry.coordinates[1], lng: f.geometry.coordinates[0] });
+    else showBanner('搵唔到「' + esc(q) + '」— 試短啲嘅名（例：「譚仔」好過「譚仔米線」）。');
+  }catch(e){ /* aborted */ }
 }
 
 /* ---------- controls ---------- */
@@ -391,7 +468,10 @@ function setView(mapMode){
   $('#mapwrap').classList.toggle('mapmode', mapMode);
   $('#vList').classList.toggle('on', !mapMode);
   $('#vMap').classList.toggle('on', mapMode);
-  if(mapMode && map){ map.invalidateSize(); }
+  if(mapMode && map){
+    map.invalidateSize();
+    if(lastPts) map.fitBounds(L.latLngBounds(lastPts).pad(0.25));
+  }
 }
 function bindExamples(){
   document.querySelectorAll('.ex').forEach(el => el.addEventListener('click', () => {
@@ -406,6 +486,7 @@ function hideBanner(){ $('#banner').innerHTML = ''; }
 fetch('data/carparks.json').then(r => r.json()).then(j => {
   PARKS = j.carparks || [];
   if(j.updated) $('#buildDate').textContent = '（主檔更新：' + j.updated + '）';
+  renderRecent();
   render();
   deepLink();
 });
@@ -420,10 +501,11 @@ async function deepLink(){
   const hit = PARKS.find(c => (c.name_tc || '').includes(q) || (c.name_en || '').toLowerCase().includes(q.toLowerCase()));
   if(hit) return setDest({ name: hit.name_tc || hit.name_en, lat: hit.lat, lng: hit.lng });
   try{
-    const r = await fetch('https://photon.komoot.io/api/?q=' + encodeURIComponent(q) + '&lat=22.35&lon=114.15&limit=1&lang=default');
+    const r = await fetch(photonUrl(q, 1));
     const j = await r.json();
     const f = j.features && j.features[0];
-    if(f && f.geometry) setDest({ name: f.properties.name || q, lat: f.geometry.coordinates[1], lng: f.geometry.coordinates[0] });
+    if(f && f.geometry && inHK(f.geometry.coordinates[1], f.geometry.coordinates[0]))
+      setDest({ name: f.properties.name || q, lat: f.geometry.coordinates[1], lng: f.geometry.coordinates[0] });
   }catch(e){ /* leave hint */ }
 }
 </script>
