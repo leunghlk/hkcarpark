@@ -199,16 +199,19 @@ function vacInfo(c){
   if(!e) return { cls:'none', text:'冇實時數', age:null };
   const age = ageMin(e.ts);
   const stale = age != null && age > STALE_MIN;
-  let text;
-  if(e.t === 'C') text = '⛔ 已關閉';
-  else if(e.t === 'B') text = e.v > 0 ? '🟢 有位' : '🔴 全滿';
-  else if(e.v < 0) text = '冇實時數';
-  else if(e.v === 0) text = '🔴 全滿';
-  else if(e.v <= 5) text = '🟠 僅剩 ' + e.v;
-  else if(e.v <= 20) text = '🟡 剩 ' + e.v;
-  else text = '🟢 剩 ' + e.v;
-  const cls = stale ? 'none' : (e.t==='C' ? 'none' : e.v===0 ? 'critical' : e.v<=5 ? 'serious' : e.v<=20 ? 'warn' : 'good');
-  return { cls, text: stale ? '⏳ 過時 ' + text.replace(/^\S+\s/,'') : text, age };
+  let text, cls;
+  if(e.t === 'C'){ text = '⛔ 已關閉'; cls = 'none'; }
+  else if(e.t === 'B'){ text = e.v > 0 ? '🟢 有位' : '🔴 全滿'; cls = e.v > 0 ? 'good' : 'critical'; }
+  else if(e.v < 0){ text = '冇實時數'; cls = 'none'; }
+  else if(e.v === 0){ text = '🔴 全滿'; cls = 'critical'; }
+  else if(e.v <= 5){ text = '🟠 僅剩 ' + e.v; cls = 'serious'; }
+  else if(e.v <= 20){ text = '🟡 剩 ' + e.v; cls = 'warn'; }
+  else { text = '🟢 剩 ' + e.v; cls = 'good'; }
+  if(stale && text !== '冇實時數' && text !== '⛔ 已關閉'){
+    text = '⏳ 過時 ' + text.replace(/^[^\s]+\s?/, '');
+    cls = 'none';
+  }
+  return { cls, text, age };
 }
 function vacRank(c){
   const e = VAC[c.id];
@@ -404,9 +407,25 @@ fetch('data/carparks.json').then(r => r.json()).then(j => {
   PARKS = j.carparks || [];
   if(j.updated) $('#buildDate').textContent = '（主檔更新：' + j.updated + '）';
   render();
+  deepLink();
 });
 fetchVacancy(false);
 vacTimer = setInterval(() => fetchVacancy(false), 180000);
+
+async function deepLink(){
+  const m = location.hash.match(/q=([^&]+)/);
+  if(!m) return;
+  const q = decodeURIComponent(m[1]).replace(/\+/g, ' ');
+  $('#q').value = q;
+  const hit = PARKS.find(c => (c.name_tc || '').includes(q) || (c.name_en || '').toLowerCase().includes(q.toLowerCase()));
+  if(hit) return setDest({ name: hit.name_tc || hit.name_en, lat: hit.lat, lng: hit.lng });
+  try{
+    const r = await fetch('https://photon.komoot.io/api/?q=' + encodeURIComponent(q) + '&lat=22.35&lon=114.15&limit=1&lang=default');
+    const j = await r.json();
+    const f = j.features && j.features[0];
+    if(f && f.geometry) setDest({ name: f.properties.name || q, lat: f.geometry.coordinates[1], lng: f.geometry.coordinates[0] });
+  }catch(e){ /* leave hint */ }
+}
 </script>
 </body>
 </html>
