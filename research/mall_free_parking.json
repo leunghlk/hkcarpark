@@ -27,7 +27,13 @@
     "notes": "24小時開放，4層地庫約700車位；只限私家車，每車每日一次；優惠須離場前辦理。",
     "sourceUrl": "https://timessquare.com.hk/zh-hant/happenings/3%e5%b0%8f%e6%99%82%e5%85%8d%e8%b2%bb%e6%b3%8a%e8%bb%8a-2026/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：憑即日單一機印收據＋電子付款存根正本於離場前換領（App／Team Times 會員非必需）",
+    "appIos": "https://apps.apple.com/hk/app/id859941365",
+    "appAndroid": "https://play.google.com/store/search?q=Hong%20Kong%20Times%20Square&c=apps",
+    "fuelPerks": "官方2026泊車優惠頁及停車場頁均無油卡／Esso優惠；流傳嘅時代廣場×Esso油卡優惠屬歷史推廣，現行未能核實（2026-10-25查證）",
+    "networkScope": "時代廣場任何商戶即日電子消費（本商場單據；EPS/信用卡/八達通/流動支付等指定電子貨幣）",
+    "networkUrl": "https://timessquare.com.hk/zh-hant/happenings/3%e5%b0%8f%e6%99%82%e5%85%8d%e8%b2%bb%e6%b3%8a%e8%bb%8a-2026/"
   },
   {
     "id": "hysan-place",
@@ -53,12 +59,20 @@
     "notes": "利園區（希慎廣場/利園一至三期/禮頓中心）優惠互通。資料由hkfreeparking轉載（更新10/8/2026），官方頁面為JS渲染未能直接讀取。",
     "sourceUrl": "https://www.leegardens.com.hk/car-park-promotion.aspx?lang=zh-HK",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「Lee Gardens」App（hy!／Club Avenue 會員）：T&C 訂明必須下載 App 並成為會員，於 App 上載最多2張即日機印單據＋電子存根換領；入車須八達通（免觸式會員除外）；積分亦可換免泊",
+    "appIos": "https://apps.apple.com/hk/app/id944866936",
+    "appAndroid": "https://play.google.com/store/search?q=Club%20Avenue%20Lee%20Gardens&c=apps",
+    "fuelPerks": null,
+    "networkScope": "利園區＝利園一至六期＋希慎廣場＋利舞臺廣場＋禮頓中心＋希慎道壹號（I.T HYSAN ONE）＋蘭芳道25號／白沙道12號指定地點商戶（官方T&C訂明）",
+    "networkUrl": "https://www.leegardens.com.hk/car-park-promotion.aspx?lang=zh-HK"
   },
   {
     "id": "lee-garden",
     "nameZh": "利園（一至三期）",
     "nameEn": "Lee Garden One to Three",
+    "aliases": ["利園一期停車場", "利園二期停車場", "利園三期停車場", "Lee Garden One Car Park", "Lee Garden Two Car Park", "Lee Garden Three Car Park"],
+    "matchAll": true,
     "addressZh": "香港銅鑼灣恩平道28號（利園二期）",
     "region": "港島",
     "district": "灣仔區",
@@ -79,7 +93,13 @@
     "notes": "與希慎廣場/禮頓中心優惠互通。hkfreeparking更新26/1/2026。",
     "sourceUrl": "https://www.leegardens.com.hk/car-park-promotion.aspx?lang=zh-HK",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「Lee Gardens」App（hy!／Club Avenue 會員）：App 上載最多2張即日機印單據＋電子存根換領；入車須八達通（免觸式會員除外）",
+    "appIos": "https://apps.apple.com/hk/app/id944866936",
+    "appAndroid": "https://play.google.com/store/search?q=Club%20Avenue%20Lee%20Gardens&c=apps",
+    "fuelPerks": null,
+    "networkScope": "利園區＝利園一至六期＋希慎廣場＋利舞臺廣場＋禮頓中心＋希慎道壹號（I.T HYSAN ONE）＋蘭芳道25號／白沙道12號指定地點商戶（官方T&C訂明）",
+    "networkUrl": "https://www.leegardens.com.hk/car-park-promotion.aspx?lang=zh-HK"
   },
   {
     "id": "leighton-centre",
@@ -105,7 +125,13 @@
     "notes": "禮頓中心停車場門檻較利園一至三期低。hkfreeparking更新26/1/2026。",
     "sourceUrl": "https://www.leegardens.com.hk/car-park-promotion.aspx?lang=zh-HK",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「Lee Gardens」App（hy!／Club Avenue 會員）：禮頓中心停車場門檻較低（一至四$200／五六日假$300→3小時）；App 上載單據換領＋入車八達通",
+    "appIos": "https://apps.apple.com/hk/app/id944866936",
+    "appAndroid": "https://play.google.com/store/search?q=Club%20Avenue%20Lee%20Gardens&c=apps",
+    "fuelPerks": null,
+    "networkScope": "利園區＝利園一至六期＋希慎廣場＋利舞臺廣場＋禮頓中心＋希慎道壹號（I.T HYSAN ONE）＋蘭芳道25號／白沙道12號指定地點商戶（官方T&C訂明）",
+    "networkUrl": "https://www.leegardens.com.hk/car-park-promotion.aspx?lang=zh-HK"
   },
   {
     "id": "windsor-house",
@@ -147,7 +173,13 @@
     "notes": "hkfreeparking更新26/1/2026。",
     "sourceUrl": "https://www.windsorhouse.hk/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「GLOW Rewards」App（皇室堡×The ONE×新港中心三商場獎賞計劃）：積分可兌換免費泊車；消費免泊換領細節官方頁未能讀取（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id6743687299",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.cel.glowrewards",
+    "fuelPerks": null,
+    "networkScope": "皇室堡商戶；GLOW 網絡＝皇室堡＋The ONE＋新港中心",
+    "networkUrl": "https://www.windsorhouse.hk/"
   },
   {
     "id": "wtc",
@@ -185,7 +217,13 @@
     "notes": "hkfreeparking更新26/1/2026；carparkhero時租數字一致。",
     "sourceUrl": "https://www.wwwtc.hk/tc/parking",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「The Point by SHKP」會員 App（WTC 為 The Point 參與新地商場）：會員積分／免觸式泊車；消費免泊換領細節官方頁未能讀取（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "WTC 世貿中心商戶；The Point 網絡＝29個新地商場",
+    "networkUrl": "https://www.wwwtc.hk/tc/parking"
   },
   {
     "id": "fashion-walk",
@@ -211,7 +249,13 @@
     "notes": "恒隆商場。hkfreeparking更新26/1/2026。",
     "sourceUrl": "https://www.hanglungmalls.com/fashion-walk",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "恒隆商場：「hello by Hang Lung Malls」App 上載消費單據賺 hellopoint 換獎賞；消費免泊換領細節官方商場頁未載（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1552869071",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.hanglung.hanglungmalls",
+    "fuelPerks": null,
+    "networkScope": "Fashion Walk（恒隆）商戶——註：Fashion Walk 不屬利園區網絡",
+    "networkUrl": "https://www.hanglungmalls.com/fashion-walk"
   },
   {
     "id": "pacific-place",
@@ -237,7 +281,13 @@
     "notes": "above Blue會員額外1小時；「Pacific Place Offices」App用戶額外1小時（至2026-12-31）。規則已於官方頁面核實；時租數字未於官方頁面直接讀到。",
     "sourceUrl": "https://www.pacificplace.com.hk/zh-hk/entertainment/happenings/free-parking",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須 'above' 會員（太古廣場 App 登記）：$500全日／$300(17:00後)→3小時；憑最多3張太古廣場／三座／六座／星街小區指定商戶即日機印收據＋電子存根＋入車八達通或信用卡，於 L1／L2 或三座服務台換領；above Blue +1小時；「Pacific Place Offices」App 用戶+1小時（至2026-12-31）",
+    "appIos": "https://apps.apple.com/hk/app/id1438841200",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.pacificplace.app",
+    "fuelPerks": null,
+    "networkScope": "太古廣場＋太古廣場三座＋六座＋星街小區指定商戶（Swire 網絡）",
+    "networkUrl": "https://www.pacificplace.com.hk/zh-hk/entertainment/happenings/free-parking"
   },
   {
     "id": "admiralty-centre",
@@ -254,7 +304,13 @@
     "notes": "日泊$210（07:00–19:00）、夜泊$110（19:00–07:00）；威信停車場營運；東鐵綫過海段半價時租優惠。",
     "sourceUrl": "未查到消費免費泊車優惠。carparkhero更新20/5/2025。",
     "verified": "https://www.carparkhero.com/car-park/admiralty-car-park-block-a-harcourt-road/",
-    "asOf": false
+    "asOf": false,
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "united-centre",
@@ -271,7 +327,13 @@
     "notes": "日泊$150（平日）、$100（週末假）；夜泊$80（19:00–07:00）。",
     "sourceUrl": "carparkhero資料更新2/3/2023，較舊，到埗宜核實；未查到消費優惠。",
     "verified": "https://www.carparkhero.com/car-park/united-centre/",
-    "asOf": false
+    "asOf": false,
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "ifc-mall",
@@ -301,7 +363,13 @@
     "notes": "ifc mall一、二期停車場；代客泊車位於二期停車場正門。時租自泊數字由hkfreeparking轉載。",
     "sourceUrl": "https://ifc.com.hk/tc/mall/parking/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "消費免泊憑同日電子貨幣單據到1樓禮賓部換領（毋須 app）；「CLUB ic」會員可經 ifc mall App 登記免觸式泊車、積分換泊車及會員每日免費泊車",
+    "appIos": "https://apps.apple.com/hk/app/id471805758",
+    "appAndroid": "https://play.google.com/store/search?q=ifc%20mall%20Hong%20Kong&c=apps",
+    "fuelPerks": null,
+    "networkScope": "ifc 商場商戶（同日電子消費；代客泊車最多累積3張單據）",
+    "networkUrl": "https://ifc.com.hk/tc/mall/parking/"
   },
   {
     "id": "shun-tak-centre",
@@ -318,7 +386,13 @@
     "notes": "信德中心／港澳碼頭停車場。",
     "sourceUrl": "未查到消費優惠；carparkhero更新18/12/2024。",
     "verified": "https://www.carparkhero.com/car-park/shun-tak-centre/",
-    "asOf": false
+    "asOf": false,
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "island-place",
@@ -335,7 +409,13 @@
     "notes": "北角港運城停車場。",
     "sourceUrl": "未查到消費優惠；carparkhero更新30/4/2023，資料較舊。",
     "verified": "https://www.carparkhero.com/car-park/island-place/",
-    "asOf": false
+    "asOf": false,
+    "appText": "港運城（太古地產旗下）；未查到消費免泊優惠",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "harbour-north",
@@ -369,7 +449,13 @@
     "notes": "日泊$180（平日08:00–18:00）、夜泊$100（21:00–08:00）。官方頁面已核實優惠機制；金額由hkfreeparking轉載（22/1/2026）。",
     "sourceUrl": "https://www.harbournorth.com.hk/zh/valet-parking-tc/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "所有免費泊車優惠只限「The Point by SHKP」會員：憑即日電子發票於顧客服務中心換領，或 App 積分換領；精選零售商戶單張$200／$400 可額外賺1小時電子換領券",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "北角匯一至三期商戶（本商場單據）",
+    "networkUrl": "https://www.harbournorth.com.hk/zh/valet-parking-tc/"
   },
   {
     "id": "cityplaza",
@@ -399,7 +485,13 @@
     "notes": "亦可以TAIKOO+ App換領（限太古城中心停車場、LIVE+會員免觸式泊車）。官方免費泊車頁已核實機制；時租及門檻由carparkhero/hkfreeparking轉載（26/1/2026）。",
     "sourceUrl": "https://www.cityplaza.com/zh-hk/whatshot/promotions/2022/free-parking",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：憑即日機印收據正本＋電子存根＋入車卡，於太古城中心B2免費泊車換領處（08:00-23:59）換領；或經「TAIKOO+」App 自助換領（限太古城中心停車場、LIVE+ 會員免觸式泊車）",
+    "appIos": "https://apps.apple.com/hk/app/id1583514972",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.taikooplus.app",
+    "fuelPerks": null,
+    "networkScope": "太古城中心商戶＋太古城及EAST Hong Kong食肆＋太古坊指定商戶（Swire 網絡；不含 Food le Parc、冰上皇宮學費、銀行、英皇道1111號及太古灣道12/14號商戶等）",
+    "networkUrl": "https://www.cityplaza.com/zh-hk/whatshot/promotions/2022/free-parking"
   },
   {
     "id": "taikoo-place",
@@ -425,7 +517,13 @@
     "notes": "適用任何日子07:00–23:59。hkfreeparking更新2/4/2026。",
     "sourceUrl": "https://www.taikooplace.com/zh-hk/our-community/free-parking-at-taikoo-place",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：憑即日電子消費收據於太古城中心B2換領處換領（最多2張$100+收據）；或「TAIKOO+」App（限太古城中心停車場、LIVE+ 會員免觸式）；範圍為太古坊指定商戶（CATCH／Enoteca／星巴克海光街等）",
+    "appIos": "https://apps.apple.com/hk/app/id1583514972",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.taikooplus.app",
+    "fuelPerks": null,
+    "networkScope": "太古城中心商戶＋太古城及EAST Hong Kong食肆＋太古坊指定商戶（Swire 網絡；不含 Food le Parc、冰上皇宮學費、銀行、英皇道1111號及太古灣道12/14號商戶等）",
+    "networkUrl": "https://www.taikooplace.com/zh-hk/our-community/free-parking-at-taikoo-place"
   },
   {
     "id": "kornhill-plaza",
@@ -451,7 +549,13 @@
     "notes": "恒隆商場。hkfreeparking更新26/1/2026。",
     "sourceUrl": "https://www.hanglungmalls.com/kornhill-plaza",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "恒隆商場：「hello by Hang Lung Malls」App 上載消費單據賺 hellopoint；消費免泊憑電子消費單據換領（換領細節以場內公佈為準）",
+    "appIos": "https://apps.apple.com/hk/app/id1552869071",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.hanglung.hanglungmalls",
+    "fuelPerks": null,
+    "networkScope": "康怡廣場（恒隆）商戶",
+    "networkUrl": "https://www.hanglungmalls.com/kornhill-plaza"
   },
   {
     "id": "the-southside",
@@ -481,7 +585,13 @@
     "notes": "hkfreeparking更新23/1/2026；carparkhero詳細時段表一致。",
     "sourceUrl": "https://www.thesouthside.com.hk/tch/promotions/parking-promotion",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「MTR Mobile」會員：透過 App 智能泊車功能／自助換領站／顧客服務中心出示會員碼＋最多2張本商場即日電子消費單據正本換領；G/F 禮賓處換領（2026-07-01起所有免泊優惠限 MTR Mobile 會員）",
+    "appIos": "https://apps.apple.com/hk/app/id369295276",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.mtr.mtrmobile",
+    "fuelPerks": null,
+    "networkScope": "THE SOUTHSIDE 指定商戶",
+    "networkUrl": "https://www.thesouthside.com.hk/tch/promotions/parking-promotion"
   },
   {
     "id": "harbour-city",
@@ -523,7 +633,13 @@
     "notes": "多個停車場（海運大廈/海洋中心/港威/Gateway）收費有差異。hkfreeparking更新26/1/2026；官方頁面為JS渲染。",
     "sourceUrl": "https://www.harbourcity.com.hk/tc/explore-hc/services-facilities/parking/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "官方 App「Harbour Cityzen」（海港城官方App，商場資訊／優惠）；消費免泊憑單據換領之確實方法官方頁 JS 渲染未能讀取（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1568652097",
+    "appAndroid": "https://play.google.com/store/apps/details?id=hk.com.harbourcity.mainapp",
+    "fuelPerks": null,
+    "networkScope": "海港城商戶（海運大廈／海洋中心／港威商場等；餐廳堂食另設門檻）",
+    "networkUrl": "https://www.harbourcity.com.hk/tc/explore-hc/services-facilities/parking/"
   },
   {
     "id": "k11-musea",
@@ -557,7 +673,13 @@
     "notes": "hkfreeparking更新26/1/2026；carparkhero時租一致。",
     "sourceUrl": "https://www.k11musea.com/zh-hk/parking/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須 KLUB 11 會員（經「K11 HK」App 註冊）：免消費泊車（鉑金2h／黑卡3h）、消費泊車（App 內登記電子泊車券或B1服務台）、指定商戶禮遇、新會員+1小時；優惠不可與 K Dollar 同用",
+    "appIos": "https://apps.apple.com/hk/app/id920299203",
+    "appAndroid": "https://play.google.com/store/search?q=K11%20HK&c=apps",
+    "fuelPerks": null,
+    "networkScope": "K11 MUSEA 商戶（消費泊車禮遇亦可憑 K11 Art Mall 合資格消費）",
+    "networkUrl": "https://www.k11musea.com/zh-hk/parking/"
   },
   {
     "id": "k11-art-mall",
@@ -591,7 +713,13 @@
     "notes": "hkfreeparking更新26/1/2026。",
     "sourceUrl": "https://hk.k11.com/zh-hk/parking/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須 KLUB 11 會員（經「K11 HK」App 註冊／登記）：鉑金／黑卡會員免消費泊車；消費泊車禮遇憑合資格消費換領",
+    "appIos": "https://apps.apple.com/hk/app/id920299203",
+    "appAndroid": "https://play.google.com/store/search?q=K11%20HK&c=apps",
+    "fuelPerks": null,
+    "networkScope": "K11 Art Mall 商戶（與 K11 MUSEA 禮遇互通）",
+    "networkUrl": "https://hk.k11.com/zh-hk/parking/"
   },
   {
     "id": "isquare",
@@ -625,7 +753,13 @@
     "notes": "hkfreeparking更新10/8/2026。",
     "sourceUrl": "https://www.isquare.hk/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "iSQUARE 自有 iCLUB 會員 App（自助登記積分、換領禮品）；消費免泊憑電子消費單據換領（換領細節官方頁 JS 渲染，到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1405757930",
+    "appAndroid": "https://play.google.com/store/apps/details?id=hk.isquare.app",
+    "fuelPerks": null,
+    "networkScope": "iSQUARE 國際廣場商戶（即日電子消費）",
+    "networkUrl": "https://www.isquare.hk/"
   },
   {
     "id": "the-one",
@@ -667,7 +801,13 @@
     "notes": "hkfreeparking更新26/1/2026。",
     "sourceUrl": "https://www.the-one.hk/tc/gettingthere/parking.asp",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "消費免泊憑最多2張餐飲商戶即日機印單據換領（毋須 app）；「GLOW Rewards」App（The ONE×皇室堡×新港中心）積分另可換免費泊車",
+    "appIos": "https://apps.apple.com/hk/app/id6743687299",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.cel.glowrewards",
+    "fuelPerks": null,
+    "networkScope": "The ONE 商戶；GLOW 網絡＝The ONE＋皇室堡＋新港中心",
+    "networkUrl": "https://www.the-one.hk/tc/gettingthere/parking.asp"
   },
   {
     "id": "mira-place",
@@ -684,7 +824,13 @@
     "notes": "日泊$200（平日07:00入場至18:30）、夜泊$80（23:00後入場）；最低收費一小時；2026年1月1日起生效。",
     "sourceUrl": "官方停車場頁面已核實收費；官方頁面未見消費免費泊車scheme（會員App或另有推廣）。",
     "verified": "https://www.miraplace.com.hk/tc/parking",
-    "asOf": true
+    "asOf": true,
+    "appText": "須「Mi+」會員 App：官方 App 說明可於 App 內以 M Points 直接兌換 Mira Place 免費泊車及預約車位；消費免泊 scheme 官方停車頁未載（以 App 內推廣為準）",
+    "appIos": "https://apps.apple.com/hk/app/id6743387539",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.miramargroup.miplus",
+    "fuelPerks": null,
+    "networkScope": "Mira Place 1 & 2 商戶（美麗華集團 Mi+ 網絡）",
+    "networkUrl": "https://www.miraplace.com.hk/tc/parking/"
   },
   {
     "id": "langham-place",
@@ -718,7 +864,13 @@
     "notes": "夜泊22:00–08:00 $120；EV充電於B4。時租已於官方頁面核實；消費門檻兩個第三方來源有差異，到埗宜以商場公佈為準。",
     "sourceUrl": "https://www.langhamplace.com.hk/zh-hk/visit-us/parking",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：憑最多2張朗豪坊不同商舖即日電子消費單據換領；免觸式泊車毋須 app（出閘前網上付款網頁繳費）；LP CLUB 會員（朗豪坊 App）享更多泊車禮遇",
+    "appIos": "https://apps.apple.com/hk/app/id383869661",
+    "appAndroid": "https://play.google.com/store/search?q=%E6%9C%97%E8%B1%AA%E5%9D%8A%20Langham%20Place&c=apps",
+    "fuelPerks": null,
+    "networkScope": "朗豪坊商場商戶",
+    "networkUrl": "https://www.langhamplace.com.hk/zh-hk/visit-us/parking"
   },
   {
     "id": "moko",
@@ -748,7 +900,13 @@
     "notes": "夜泊22:00–07:00 $90。官方頁面已核實收費及優惠條款。",
     "sourceUrl": "https://www.moko.com.hk/about-moko/parking/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「The Point by SHKP」會員 App：憑最多2張即日機印發票＋電子存根於顧客服務中心換領；指定食肆／戲院消費$100 額外+1小時；積分換領限免觸式會員",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "MOKO 新世紀廣場商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.moko.com.hk/about-moko/parking/"
   },
   {
     "id": "festival-walk",
@@ -778,7 +936,13 @@
     "notes": "日泊$130（平日07:00–24:00）、夜泊$100（21:00–08:00）。官方頁面已核實。",
     "sourceUrl": "https://www.festivalwalk.com.hk/en/parking/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "官方 App「Festival Walk 又一城」（My FESTIVAL 會員積分＋泊車資訊）；消費免泊（電子消費）換領方法官方頁 JS 渲染未能讀取（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1211091644",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.festivalwalk.app",
+    "fuelPerks": null,
+    "networkScope": "又一城商戶（即日電子消費；Mapletree 旗下）",
+    "networkUrl": "https://www.festivalwalk.com.hk/tc/parking/"
   },
   {
     "id": "olympian-city",
@@ -812,7 +976,13 @@
     "notes": "hkfreeparking更新10/8/2026及26/1/2026；carparkhero時租一致。",
     "sourceUrl": "https://www.olympiancity.com.hk/tc/Promotion/400",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「S+ Rewards」信和會員 App（2026-09-14起泊車優惠限 S⁺ 會員）：憑最多3張商戶即日機印收據＋電子存根換領，或 App 上載收據／積分兌換；S⁺×Citi 免觸式泊車",
+    "appIos": "https://apps.apple.com/hk/app/id1440803468",
+    "appAndroid": "https://play.google.com/store/search?q=S%2B%20Rewards%20%E4%BF%A1%E5%92%8C%E7%8D%8E%E8%B3%9E&c=apps",
+    "fuelPerks": null,
+    "networkScope": "奧海城1／2／3期商戶；S+ Rewards 網絡＝信和集團旗下商場",
+    "networkUrl": "https://www.olympiancity.com.hk/tc/Promotion/400"
   },
   {
     "id": "elements",
@@ -838,7 +1008,13 @@
     "notes": "約131個EV充電設備（DC $3/kWh、AC $2.6/kWh，2025-05-02起）；北停車場為主。官方頁面已核實；carparkhero另載南停車場$22/小時（2026-01）。",
     "sourceUrl": "https://www.elementshk.com/tch/elements/location/parking",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：即日單一電子消費每滿$100換1小時（每次入車上限5小時）；另有「ELEMENTS CLUB」App 賺積分換禮遇",
+    "appIos": "https://apps.apple.com/hk/app/id6751031170",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.mtr.elementshk",
+    "fuelPerks": null,
+    "networkScope": "ELEMENTS 圓方商戶（單一消費每滿$100）",
+    "networkUrl": "https://www.elementshk.com/tch/elements/location/parking"
   },
   {
     "id": "west-kowloon",
@@ -868,7 +1044,13 @@
     "notes": "藝術公園E區/F區停車場；M+停車場平日$28/假日$32（carparkhero）。hkfreeparking更新26/1/2026。",
     "sourceUrl": "https://www.westk.hk/tc/visit/parking/privileges",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "西九文化區官方 App 提供園區資訊；消費免泊換領方法官方頁未能讀取（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1567359822",
+    "appAndroid": "https://play.google.com/store/search?q=%E8%A5%BF%E4%B9%9D%E6%96%87%E5%8C%96%E5%8D%80&c=apps",
+    "fuelPerks": null,
+    "networkScope": "西九文化區（藝術公園／M+）消費",
+    "networkUrl": "https://www.westk.hk/tc/visit/parking/privileges"
   },
   {
     "id": "whampoa",
@@ -898,7 +1080,13 @@
     "notes": "黃埔花園多期商場多個停車場收費相近。hkfreeparking更新10/8/2026。",
     "sourceUrl": "https://www.thewhampoa.com/list/detail-670.html",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：指定商戶電子消費憑即日單一機印發票＋電子存根換領；17:00-24:00入車加食肆$100存根可加碼；「The Whampoa」App（W+會員積分／實時車位）非兌換必需",
+    "appIos": "https://apps.apple.com/hk/app/id6745201427",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.thewhampoa",
+    "fuelPerks": null,
+    "networkScope": "黃埔天地指定商戶（指定電子貨幣；不含虛擬信用卡等）",
+    "networkUrl": "https://www.thewhampoa.com/list/detail-670.html"
   },
   {
     "id": "ho-man-tin-plaza",
@@ -920,7 +1108,13 @@
     "notes": "領展物業。hkfreeparking更新7/8/2026。",
     "sourceUrl": "https://www.linkhk.com/tc/parking/8424",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "領展物業：消費免泊憑即日電子消費單據換領（領展香港商場無泊車會員 App；換領位置到埗確認）",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": "何文田廣場商戶（領展）",
+    "networkUrl": "https://www.linkhk.com/tc/parking/8424"
   },
   {
     "id": "mikiki",
@@ -946,7 +1140,13 @@
     "notes": "hkfreeparking更新24/2/2026（來源為商場宣傳圖）；carparkhero較舊載$24/小時。",
     "sourceUrl": "https://www.mikiki-mall.com.hk/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「The Point by SHKP」會員 App（Mikiki 為 The Point 參與新地商場）；消費免泊換領細節以場內公佈為準",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "Mikiki 商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.mikiki-mall.com.hk/"
   },
   {
     "id": "plaza-hollywood",
@@ -984,7 +1184,13 @@
     "notes": "時租已於官方頁面核實；優惠門檻由hkfreeparking轉載（10/8/2026）。換領：一樓明星廣場客戶服務中心。",
     "sourceUrl": "https://www.plazahollywood.com.hk/tc/parking",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：憑同日電子消費單據到1樓明星廣場客戶服務中心換領；停車場繳費只收八達通",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": "荷里活廣場商戶（九龍倉置業成員）",
+    "networkUrl": "https://www.plazahollywood.com.hk/tc/parking"
   },
   {
     "id": "megabox",
@@ -1018,7 +1224,13 @@
     "notes": "hkfreeparking與carparkhero樓層時租有$2差異，需到埗核實。hkfreeparking更新10/8/2026。",
     "sourceUrl": "https://www.megabox.com.hk/visit_us.php?lang=tchi",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：食肆$100／零售$200即日電子消費（或即日戲票2張）到 G/F 或 L9 禮賓處換領；另有 MegaBox App（MegaClub）",
+    "appIos": "https://apps.apple.com/hk/app/id459355968",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.megabox_android",
+    "fuelPerks": null,
+    "networkScope": "MegaBox 商戶（企業廣場五期）",
+    "networkUrl": "https://www.megabox.com.hk/visit_us.php?lang=tchi"
   },
   {
     "id": "telford-plaza",
@@ -1044,7 +1256,13 @@
     "notes": "1期106車位（8 EV）、2期96車位（41 EV）、D場77車位；AC充電$2.6/kWh。官方頁面已核實時租及停車場資訊；門檻由carparkhero/hkfreeparking轉載。",
     "sourceUrl": "https://www.telford-plaza.com/tch/parking",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "憑不多於2張即日商戶電子消費單據正本＋相符電子存根換領（客戶服務中心；毋須 app）；「MTR Mobile」App 可查實時車位",
+    "appIos": "https://apps.apple.com/hk/app/id369295276",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.mtr.mtrmobile",
+    "fuelPerks": null,
+    "networkScope": "德福廣場商戶",
+    "networkUrl": "https://www.telford-plaza.com/tch/parking"
   },
   {
     "id": "apm",
@@ -1082,7 +1300,13 @@
     "notes": "hkfreeparking更新26/1/2026；carparkhero一致。",
     "sourceUrl": "https://www.hkapm.com.hk/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「The Point by SHKP」會員 App（apm 為 The Point 參與新地商場）：消費免泊憑即日電子消費單據換領（3小時優惠；換領位置到場確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "apm 商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.hkapm.com.hk/"
   },
   {
     "id": "ym2",
@@ -1108,7 +1332,13 @@
     "notes": "日泊由入場時間至23:59 $40（carparkhero）。hkfreeparking更新2/4/2026。",
     "sourceUrl": "https://www.ym2.hk/tc/Promotion/554",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：即日電子消費（最多2張不同單據，每張至少$100）到 UG 禮賓處換領",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": "YM² 裕民坊商戶（市建局）",
+    "networkUrl": "https://www.ym2.hk/tc/Promotion/554"
   },
   {
     "id": "airside",
@@ -1142,7 +1372,13 @@
     "notes": "官方泊車頁已核實存在；收費數字由hkfreeparking轉載（26/1/2026），carparkhero一致。",
     "sourceUrl": "https://www.airside.com.hk/zh-hk/visit/parking",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "憑最多2張不同商戶即日電子貨幣消費收據換領（毋須 app）；「NF Touch」南豐會員出示 App 電子證可額外+1小時",
+    "appIos": "https://apps.apple.com/hk/app/id1638267130",
+    "appAndroid": "https://play.google.com/store/search?q=NF%20Touch%20%E5%8D%97%E8%B1%90&c=apps",
+    "fuelPerks": null,
+    "networkScope": "AIRSIDE 商戶（南豐集團）",
+    "networkUrl": "https://www.airside.com.hk/zh-hk/visit/parking"
   },
   {
     "id": "kai-tak-sports-park",
@@ -1176,7 +1412,13 @@
     "notes": "主場館停車場與體育館收費不同。hkfreeparking（主場館7/8/2026）及carparkhero（體育館19/9/2026）。",
     "sourceUrl": "https://www.kaitaksportspark.com.hk/tc/promotion/5",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「啟德體育園」官方 App（啟德體育園之友會員）；免費泊車優惠詳情官方頁以圖像顯示未能讀取（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id6502622059",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.ktsp.app",
+    "fuelPerks": null,
+    "networkScope": "啟德體育園（主場館／體育館消費）",
+    "networkUrl": "https://www.kaitaksportspark.com.hk/tc/promotion/5"
   },
   {
     "id": "d2-place",
@@ -1193,7 +1435,13 @@
     "notes": "消費優惠適用一期、二期或荔枝角道822號，最多2張收據（門檻未載明）；二期日泊$100（平日08:00–18:00，4/F）。",
     "sourceUrl": "hkfreeparking更新10/8/2026。",
     "verified": "https://www.d2place.com/parking",
-    "asOf": false
+    "asOf": false,
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "dragon-centre",
@@ -1219,7 +1467,13 @@
     "notes": "hkfreeparking更新2/4/2026；carparkhero一致。",
     "sourceUrl": "https://dragoncentre.com.hk/parking",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：平日電子消費$200／假日$300→最多3小時（可累積最多5張不同商戶收據）；停車場只接受八達通及VISA付款",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": "西九龍中心商戶",
+    "networkUrl": "https://dragoncentre.com.hk/parking"
   },
   {
     "id": "v-walk",
@@ -1253,7 +1507,13 @@
     "notes": "hkfreeparking更新2/4/2026。",
     "sourceUrl": "https://www.vwalk.com.hk/tch/access/parking",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「The Point by SHKP」會員 App：會員泊車優惠（消費換領或積分換領）；「VWALK」App 另可查實時車位",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "V Walk 商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.vwalk.com.hk/tch/access/parking"
   },
   {
     "id": "domain",
@@ -1287,7 +1547,13 @@
     "notes": "hkfreeparking更新10/8/2026。",
     "sourceUrl": "https://www.domain-mall.hk/index.php/TC/transportation/parking-offers",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「型人會」App（大本型會員）：App 自助登記收據賺積分＋查閱泊車資訊；消費免泊換領細節官方頁未能完整讀取（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1581383995",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.domainclub",
+    "fuelPerks": null,
+    "networkScope": "大本型（Domain）商戶",
+    "networkUrl": "https://www.domain-mall.hk/index.php/TC/transportation/parking-offers"
   },
   {
     "id": "kowloon-city-plaza",
@@ -1309,7 +1575,13 @@
     "notes": "hkfreeparking更新7/8/2026。",
     "sourceUrl": "https://www.kowlooncityplaza.com/carpark-detail?article_id=121",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：星期一至五首1小時免費泊車（毋須消費，官方頁載明）",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": "九龍城廣場商戶（GOOD FOCUS HOLDINGS）",
+    "networkUrl": "https://www.kowlooncityplaza.com/carpark-detail?article_id=121"
   },
   {
     "id": "mei-foo",
@@ -1326,7 +1598,13 @@
     "notes": "全日任泊$155（平日）/$165（假日），由入閘起至同日午夜。",
     "sourceUrl": "未查到消費優惠；carparkhero更新20/4/2025。",
     "verified": "https://www.carparkhero.com/car-park/mei-foo-sun-chuen-stage-4/",
-    "asOf": false
+    "asOf": false,
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "new-town-plaza",
@@ -1364,7 +1642,13 @@
     "notes": "夜泊21:00–07:00 $90。官方泊車服務頁已核實優惠結構；時租假日$28由hkfreeparking轉載。",
     "sourceUrl": "https://www.newtownplaza.com.hk/zh-hant/parking-tc/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「The Point by SHKP」會員 App（2023-09-01起消費免泊限會員）：單據於顧客服務中心換領或 App 積分換領；支援免觸式泊車；粵車南下車主額外+2小時",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "新城市廣場商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.newtownplaza.com.hk/zh-hant/parking-tc/"
   },
   {
     "id": "homesquare",
@@ -1402,7 +1686,13 @@
     "notes": "夜泊平日$60/假日$95（20:00–08:00）。hkfreeparking更新2/4/2026。",
     "sourceUrl": "https://www.homesquare.com.hk/zh-hant/parking",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「The Point by SHKP」會員 App（SHKP Malls App）：The Point 會員泊車優惠，憑單據或 App 積分換領",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "HomeSquare 商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.homesquare.com.hk/zh-hant/parking"
   },
   {
     "id": "shatin-centre",
@@ -1428,7 +1718,13 @@
     "notes": "日泊$100（08:00–18:00）、夜泊$75（20:00–08:00）。hkfreeparking更新22/1/2026。",
     "sourceUrl": "https://www.shatinplazacentre.com.hk/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "消費免泊憑即日電子消費單據換領（毋須 app）；「H COINS」App（恒基商場獎賞，覆蓋沙田中心及沙田廣場）賺分換獎賞",
+    "appIos": "https://apps.apple.com/hk/app/id1519753346",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.henderson.hcoins",
+    "fuelPerks": null,
+    "networkScope": "沙田中心商戶；H COINS 網絡＝恒基地產14個項目",
+    "networkUrl": "https://www.shatinplazacentre.com.hk/"
   },
   {
     "id": "fortune-city-one",
@@ -1462,7 +1758,13 @@
     "notes": "hkfreeparking更新7/8/2026。",
     "sourceUrl": "https://www.fortunemalls.com.hk/tc/events/4/1",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「Fortune+」置富 Malls 會員（「Fortune Malls 置富Malls」App 賺分換領）；消費免泊優惠詳情見置富官網活動頁",
+    "appIos": "https://apps.apple.com/hk/app/id1514605806",
+    "appAndroid": "https://play.google.com/store/search?q=Fortune%20Malls%20%E7%BD%AE%E5%AF%8CMalls&c=apps",
+    "fuelPerks": null,
+    "networkScope": "置富第一城中心商戶（Fortune REIT 置富商場網絡）",
+    "networkUrl": "https://www.fortunemalls.com.hk/tc/events/4/1"
   },
   {
     "id": "the-wai",
@@ -1504,7 +1806,13 @@
     "notes": "官方免費泊車頁已核實機制及門檻；時租由hkfreeparking轉載（9/8/2026）。",
     "sourceUrl": "https://www.thewaimall.com/tch/promotions/free-parking-privilege",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「MTR Mobile」會員：透過 App 智能泊車功能／自助換領站／顧客服務中心出示會員碼＋最多2張本商場即日電子消費單據正本換領；或 L4-5自助換領泊車優惠服務站／L2顧客服務中心（英皇戲院2張戲票→3小時於服務中心）",
+    "appIos": "https://apps.apple.com/hk/app/id369295276",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.mtr.mtrmobile",
+    "fuelPerks": null,
+    "networkScope": "圍方指定商戶（本商場單據）",
+    "networkUrl": "https://www.thewaimall.com/tch/promotions/free-parking-privilege"
   },
   {
     "id": "mostown",
@@ -1538,7 +1846,13 @@
     "notes": "hkfreeparking更新22/1/2026。",
     "sourceUrl": "https://www.mostown.com.hk/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "消費免泊憑即日電子消費單據換領（毋須 app）；「H COINS」App（恒基商場獎賞，覆蓋 MOStown 新港城中心）",
+    "appIos": "https://apps.apple.com/hk/app/id1519753346",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.henderson.hcoins",
+    "fuelPerks": null,
+    "networkScope": "新港城中心商戶；H COINS 網絡＝恒基地產14個項目",
+    "networkUrl": "https://www.mostown.com.hk/"
   },
   {
     "id": "ma-on-shan-plaza",
@@ -1572,7 +1886,13 @@
     "notes": "hkfreeparking更新22/1/2026。",
     "sourceUrl": "https://www.fortunemalls.com.hk/tc/events/3/1",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「Fortune+」置富 Malls 會員（「Fortune Malls 置富Malls」App 賺分換領）；消費免泊優惠詳情見置富官網活動頁",
+    "appIos": "https://apps.apple.com/hk/app/id1514605806",
+    "appAndroid": "https://play.google.com/store/search?q=Fortune%20Malls%20%E7%BD%AE%E5%AF%8CMalls&c=apps",
+    "fuelPerks": null,
+    "networkScope": "馬鞍山廣場商戶（Fortune REIT 置富商場網絡）",
+    "networkUrl": "https://www.fortunemalls.com.hk/tc/events/3/1"
   },
   {
     "id": "tsuen-wan-plaza",
@@ -1598,7 +1918,13 @@
     "notes": "EV特快充電B2（CCS2）。官方頁面已讀（優惠機制核實）；時租門檻由hkfreeparking轉載（22/1/2026），假日$25與官方優惠期$25顯示有重疊，需到埗核實。",
     "sourceUrl": "https://www.tsuenwanplaza.com.hk/tc/parking-tc/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「The Point by SHKP」會員 App：免費停車優惠僅適用於 The Point 會員；App 上載收據只適用基本免泊（餐飲額外1小時須到場辦理）",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "荃灣廣場商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.tsuenwanplaza.com.hk/tc/parking-tc/"
   },
   {
     "id": "citywalk",
@@ -1624,7 +1950,13 @@
     "notes": "荃新天地1期1/F及2期B1/F設Shell Recharge DC充電。官方頁面已核實優惠；時租由carparkhero/hkfreeparking轉載。",
     "sourceUrl": "https://www.citywalk.com.hk/tc/Parking",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「S+ Rewards」信和會員 App：憑最多2張荃新天地／荃新天地2 之不同 S⁺ REWARDS 合資格商戶即日機印收據＋電子存根換領",
+    "appIos": "https://apps.apple.com/hk/app/id1440803468",
+    "appAndroid": "https://play.google.com/store/search?q=S%2B%20Rewards%20%E4%BF%A1%E5%92%8C%E7%8D%8E%E8%B3%9E&c=apps",
+    "fuelPerks": null,
+    "networkScope": "荃新天地＋荃新天地2 之 S⁺ REWARDS 合資格商戶（名單：splusrewards.com.hk/tc/merchants-tc）",
+    "networkUrl": "https://www.citywalk.com.hk/tc/Parking"
   },
   {
     "id": "d-park",
@@ -1674,7 +2006,13 @@
     "notes": "hkfreeparking更新7/8/2026。",
     "sourceUrl": "https://www.dpark.com.hk/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "華懋商場：「如心賞」會員 App 網絡；免費泊車禮遇最多5小時（官方活動頁）；換領細節官方頁 JS 渲染未能讀取（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id6451194284",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.chinachemgroup.ccghearts",
+    "fuelPerks": null,
+    "networkScope": "D‧PARK 愉景新城商戶（華懋集團）",
+    "networkUrl": "https://www.dpark.com.hk/"
   },
   {
     "id": "nina-mall",
@@ -1708,7 +2046,13 @@
     "notes": "hkfreeparking更新10/8/2026。",
     "sourceUrl": "https://www.ninamall.com.hk/parking/?lang=zh-hant",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：憑最多2張指定商戶即日發票（每張淨消費$50+）＋電子存根＋入車八達通，於一期1/F或二期2/F禮賓部換領；「如心賞」為華懋會員 App",
+    "appIos": "https://apps.apple.com/hk/app/id6451194284",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.chinachemgroup.ccghearts",
+    "fuelPerks": null,
+    "networkScope": "如心廣場一期及二期指定商戶",
+    "networkUrl": "https://www.ninamall.com.hk/parking/?lang=zh-hant"
   },
   {
     "id": "kolour-tsuen-wan",
@@ -1734,7 +2078,13 @@
     "notes": "hkfreeparking更新10/8/2026。",
     "sourceUrl": "https://tw.kolourmalls.com.hk/tc/parking.html",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "消費免泊憑最多2組即日機印發票＋電子存根換領（毋須 app）；恒地會指定會員出示憑證於禮賓部辦理可額外+1小時；「H COINS」App 為恒基商場獎賞 App",
+    "appIos": "https://apps.apple.com/hk/app/id1519753346",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.henderson.hcoins",
+    "fuelPerks": null,
+    "networkScope": "荃灣千色匯 I & II 商戶（免泊限千色匯I停車場）；H COINS 網絡＝恒基地產14個項目",
+    "networkUrl": "https://tw.kolourmalls.com.hk/tc/parking.html"
   },
   {
     "id": "tmt-plaza",
@@ -1768,7 +2118,13 @@
     "notes": "官方泊車資訊頁已核實會員制及上限；門檻金額由hkfreeparking轉載（9/8/2026）。",
     "sourceUrl": "https://www.tmtp.com.hk/tc/Parking",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「S+ Rewards」信和會員 App（2026-09-14起泊車優惠限會員）：憑最多3張不同商戶當日機印收據＋電子存根換領，或 App 上載收據／積分兌換（可併用至4小時）；額外優惠於1樓禮賓處或3樓繳費處辦理",
+    "appIos": "https://apps.apple.com/hk/app/id1440803468",
+    "appAndroid": "https://play.google.com/store/search?q=S%2B%20Rewards%20%E4%BF%A1%E5%92%8C%E7%8D%8E%E8%B3%9E&c=apps",
+    "fuelPerks": null,
+    "networkScope": "屯門市廣場（一至三期）商戶；S+ Rewards 網絡＝信和集團旗下商場",
+    "networkUrl": "https://www.tmtp.com.hk/tc/Parking"
   },
   {
     "id": "v-city",
@@ -1802,7 +2158,13 @@
     "notes": "官方頁面已核實平日時租及優惠結構；假日時租由hkfreeparking轉載。",
     "sourceUrl": "https://www.vcity.com.hk/tch/parking/parking.jsp",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「The Point by SHKP」會員 App：即日電子消費於 V city MTR層顧客服務中心換領，或 App 積分換領；指定食肆消費$200 額外+1小時",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "V city 商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.vcity.com.hk/tch/parking/parking.jsp"
   },
   {
     "id": "yoho-mall",
@@ -1840,7 +2202,13 @@
     "notes": "YOHO PLUS加點同區（元龍街9號），假日優惠更高（$300=5小時/$500=6小時）。官方頁面已核實。",
     "sourceUrl": "https://www.yohomall.hk/zh-hk/driving-info",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「The Point by SHKP」會員 App：YOHO 系商場會員免泊（最多2張不同商舖即日電子發票）；指定會員（新地會星級／Go Royal／SmarTone Plus）額外時數；免觸式會員可積分換領",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "YOHO MALL 商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.yohomall.hk/zh-hk/driving-info"
   },
   {
     "id": "t-town",
@@ -1862,7 +2230,13 @@
     "notes": "領展物業，兩翼收費相同；設領展EV充電。hkfreeparking更新7/8/2026。",
     "sourceUrl": "https://www.linkhk.com/tc/parking/3306",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "領展物業（T Town 北翼及南翼）：消費免泊憑即日電子消費單據換領（領展香港商場無泊車會員 App；換領位置到埗確認）",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": "T Town 商戶（領展）",
+    "networkUrl": "https://www.linkhk.com/tc/parking/3306"
   },
   {
     "id": "tai-po-mega-mall",
@@ -1884,7 +2258,13 @@
     "notes": "A–D區與多層停車場收費不同。hkfreeparking更新19/1/2026。",
     "sourceUrl": "https://taipomegamall.shkp.com/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「The Point by SHKP」會員 App：會員尊享免費泊車（The Point 會員免費1小時起）；另有新地會星級會員泊車優惠及 SmarTone PRIORITY 額外+1小時",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "大埔超級城（A–D區）商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://taipomegamall.shkp.com/"
   },
   {
     "id": "uptown-plaza",
@@ -1922,7 +2302,13 @@
     "notes": "hkfreeparking更新22/1/2026。",
     "sourceUrl": "https://www.uptownplaza.com.hk/parking/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「The Point by SHKP」會員 App：消費換領或 App 積分換領；The Point App 另提供實時車位資訊及泊車導航",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "新達廣場商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.uptownplaza.com.hk/parking/"
   },
   {
     "id": "park-central",
@@ -1956,7 +2342,13 @@
     "notes": "官方頁面已讀（收費及12/24小時泊）；消費門檻由hkfreeparking轉載（23/1/2026）。",
     "sourceUrl": "https://www.park-central.com.hk/tc-parking-service/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「The Point by SHKP」會員 App（將軍澳中心為 The Point 參與商場）；PopFood／PopDeli 單據只限換領將軍澳中心商場免泊",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "將軍澳中心商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.park-central.com.hk/tc-parking-service/"
   },
   {
     "id": "popcorn",
@@ -1986,7 +2378,13 @@
     "notes": "MTR商場。hkfreeparking更新23/1/2026。",
     "sourceUrl": "https://www.popcorntko.com.hk/tch/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「MTR Mobile」會員：透過 App 智能泊車功能／自助換領站／顧客服務中心出示會員碼＋最多2張本商場即日電子消費單據正本換領（限 PopCorn B2層停車場；星期一至五消費滿$200或即日戲票2張→2小時）",
+    "appIos": "https://apps.apple.com/hk/app/id369295276",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.mtr.mtrmobile",
+    "fuelPerks": null,
+    "networkScope": "PopCorn 商戶（本商場單據）",
+    "networkUrl": "https://www.popcorntko.com.hk/tch/parking"
   },
   {
     "id": "east-point-city",
@@ -2020,7 +2418,13 @@
     "notes": "官方頁面已讀（The Point會員制核實）；金額由hkfreeparking轉載（22/1/2026）。",
     "sourceUrl": "https://www.eastpointcity.com.hk/parking-2/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "所有泊車優惠只適用於「The Point by SHKP」會員 App：即日電子消費或 App 積分換領（最多2組機印發票＋存根）；詳情到2/F顧客服務中心",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "東港城商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.eastpointcity.com.hk/parking-2/"
   },
   {
     "id": "the-lohas",
@@ -2054,7 +2458,13 @@
     "notes": "官方免費泊車頁已核實機制；時租及部分門檻由hkfreeparking轉載（23/1/2026）。",
     "sourceUrl": "https://www.thelohasmall.com/tch/promotions/free-parking-privilege",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「MTR Mobile」會員：透過 App 智能泊車功能／自助換領站／顧客服務中心出示會員碼＋最多2張本商場即日電子消費單據正本換領；自助換領不適用戲票／指定餐飲加碼優惠（須L3顧客服務中心）；只接受信用卡及八達通入閘",
+    "appIos": "https://apps.apple.com/hk/app/id369295276",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.mtr.mtrmobile",
+    "fuelPerks": null,
+    "networkScope": "The LOHAS 康城商戶",
+    "networkUrl": "https://www.thelohasmall.com/tch/promotions/free-parking-privilege"
   },
   {
     "id": "metro-town",
@@ -2071,7 +2481,13 @@
     "notes": "貨車上落貨$30/小時。",
     "sourceUrl": "未查到消費優惠；carparkhero更新15/6/2024。",
     "verified": "https://www.carparkhero.com/car-park/metro-town/",
-    "asOf": false
+    "asOf": false,
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "maritime-square",
@@ -2105,7 +2521,13 @@
     "notes": "EV：DC $3/kWh、AC $2.6/kWh。官方泊車頁已讀；時租及門檻部分由hkfreeparking轉載（23/1/2026）。",
     "sourceUrl": "https://www.maritimesquare.com/tch/parking",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須「MTR Mobile」會員：透過 App 智能泊車功能／自助換領站／顧客服務中心出示會員碼＋最多2張本商場即日電子消費單據正本換領（青衣城1及2期停車場；2026-07-01起優惠期）",
+    "appIos": "https://apps.apple.com/hk/app/id369295276",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.mtr.mtrmobile",
+    "fuelPerks": null,
+    "networkScope": "青衣城1期及2期商戶（本商場單據）",
+    "networkUrl": "https://www.maritimesquare.com/tch/parking"
   },
   {
     "id": "metroplaza",
@@ -2131,7 +2553,13 @@
     "notes": "hkfreeparking更新26/1/2026。",
     "sourceUrl": "https://www.metroplaza.com.hk/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「The Point by SHKP」會員 App（新都會廣場為 The Point 參與新地商場）；消費免泊換領細節官方頁未能讀取（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "新都會廣場商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": null
   },
   {
     "id": "citygate-outlets",
@@ -2161,7 +2589,13 @@
     "notes": "Tesla Supercharger V2/V4設於場內。官方免費泊車頁已核實推廣期及P2/P3限制；門檻由hkfreeparking轉載（22/1/2026）。",
     "sourceUrl": "https://www.citygateoutlets.com.hk/zh-hk/offer-events/events/parking_offers/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「TAIKOO+」App（CLUB CG 會員）可自助換領；推廣額外+1小時須到2樓 CLUB CG 會員專櫃（鄰Bally）或2樓顧客服務中心辦理（至2026-10-31；限P2/P3）",
+    "appIos": "https://apps.apple.com/hk/app/id1583514972",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.taikooplus.app",
+    "fuelPerks": null,
+    "networkScope": "東薈城名店倉商戶（一至二期）",
+    "networkUrl": "https://www.citygateoutlets.com.hk/zh-hk/offer-events/events/parking_offers/"
   },
   {
     "id": "landmark-north",
@@ -2195,7 +2629,13 @@
     "notes": "hkfreeparking更新19/1/2026；carparkhero一致。",
     "sourceUrl": "https://www.landmarknorth.com.hk/tc/transport/parking",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "「The Point by SHKP」會員 App（上水廣場為 The Point 參與新地商場）；消費免泊憑即日電子消費單據換領",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "上水廣場商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": "https://www.landmarknorth.com.hk/tc/transport/parking"
   },
   {
     "id": "sheung-shui-centre",
@@ -2221,7 +2661,13 @@
     "notes": "hkfreeparking更新7/8/2026。",
     "sourceUrl": "https://www.sheungshuicentre.com/parking/",
     "verified": false,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "消費免泊憑單一或合併最多2張機印收據換領（毋須 app）；「H COINS」App（恒基商場獎賞，覆蓋上水中心）",
+    "appIos": "https://apps.apple.com/hk/app/id1519753346",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.henderson.hcoins",
+    "fuelPerks": null,
+    "networkScope": "上水中心商戶；H COINS 網絡＝恒基地產14個項目",
+    "networkUrl": "https://www.sheungshuicentre.com/parking/"
   },
   {
     "id": "hopewell-centre-car-park",
@@ -2251,7 +2697,13 @@
     "notes": "著名螺旋式車道多層車場（Tesla/Porsche/KINETA充電）；已存在於運輸署560開放數據（名稱「合和中心」），可掛實時空位；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/hopewell-centre/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "合和商場 Hopewell Cluster 電子消費換領；「Hopewell Club」App 為合和會員 App；換領細節官方頁未能讀取（到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id6448007217",
+    "appAndroid": "https://play.google.com/store/search?q=Hopewell%20Club&c=apps",
+    "fuelPerks": null,
+    "networkScope": "合和商場 Hopewell Cluster＝合和中心＋胡忠大廈＋QRE Plaza＋GARDENEast＋163 QRE 商戶（以官方公佈為準）",
+    "networkUrl": null
   },
   {
     "id": "causeway-bay-plaza-2",
@@ -2268,7 +2720,13 @@
     "notes": "1992年落成、室內有蓋，月租浮動$5,300／孖位$8,800；2個中速充電（每4小時$20）；不在運輸署開放數據內；時租資料自carparkhero＋kkleo（kkleo最後更新2026-08-26）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/causeway-bay-plaza-2/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "causeway-bay-plaza-1",
@@ -2285,7 +2743,13 @@
     "notes": "駕車前往請用毗鄰銅鑼灣廣場二期（駱克道463-483號，約100米）；位置及「無車場」事實經維基百科《銅鑼灣廣場》核實（2026-10-25讀取）；座標為OpenStreetMap建築物點。",
     "sourceUrl": "https://zh.wikipedia.org/wiki/%E9%8A%85%E9%91%BC%E7%81%A3%E5%BB%A3%E5%A0%B4",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "the-l-square",
@@ -2302,7 +2766,13 @@
     "notes": "用戶搜尋「The L. Square」時所期望的銅鑼灣廣場二期車場就在斜對面（駱克道463-483號，約50米）；座標為OpenStreetMap建築物點（Volcano Grill 459-461駱克道）；不在運輸署開放數據內。",
     "sourceUrl": "https://www.rp.com.hk/tc/building/The-L.-Square-1002282",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "convention-plaza",
@@ -2319,7 +2789,13 @@
     "notes": "香港會議展覽中心／會展廣場一帶主要公眾車場之一；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/convention-plaza-harbour-road-/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "wu-chung-house",
@@ -2349,7 +2825,13 @@
     "notes": "政府聯用大樓（含稅務局）但有公眾時租車位；已存在於運輸署560開放數據（名稱「胡忠大廈」），可掛實時空位；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/wu-chung-house/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "合和商場 Hopewell Cluster 電子消費換領（與合和中心優惠互通）；「Hopewell Club」App 為合和會員 App",
+    "appIos": "https://apps.apple.com/hk/app/id6448007217",
+    "appAndroid": "https://play.google.com/store/search?q=Hopewell%20Club&c=apps",
+    "fuelPerks": null,
+    "networkScope": "合和商場 Hopewell Cluster＝合和中心＋胡忠大廈＋QRE Plaza＋GARDENEast＋163 QRE 商戶（以官方公佈為準）",
+    "networkUrl": null
   },
   {
     "id": "sino-plaza",
@@ -2366,7 +2848,13 @@
     "notes": "銅鑼灣告士打道大型商廈車場；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/sino-plaza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "信和廣場為信和旗下物業（S+ Rewards 會員網絡）；未查到消費免泊優惠",
+    "appIos": "https://apps.apple.com/hk/app/id1440803468",
+    "appAndroid": "https://play.google.com/store/search?q=S%2B%20Rewards%20%E4%BF%A1%E5%92%8C%E7%8D%8E%E8%B3%9E&c=apps",
+    "fuelPerks": null,
+    "networkScope": "信和廣場商戶",
+    "networkUrl": null
   },
   {
     "id": "china-resources-building",
@@ -2383,7 +2871,13 @@
     "notes": "灣仔北灣景集中區（鄰會展）；B2設充美好快速500kW×12＋中速×6＋Tesla×4；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/china-resources-building/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "causeway-centre",
@@ -2400,7 +2894,13 @@
     "notes": "灣仔北港灣道；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/causeway-centre/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "exchange-square",
@@ -2426,7 +2926,13 @@
     "notes": "中環港鐵站上蓋；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/exchange-square/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須 BESPOKE 雋環會員（香港置地中區會員計劃；經「LANDMARK」App 管理 Bespoke Dollars）：消費免泊以 BESPOKE 會員電子消費計算（官方詳情頁未能讀取，到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1172087580",
+    "appAndroid": "https://play.google.com/store/search?q=LANDMARK%20HONGKONG&c=apps",
+    "fuelPerks": null,
+    "networkScope": "BESPOKE 雋環會員電子消費＝香港置地中區物業商戶（置地廣場／交易廣場／遮打大廈一帶；以官方商戶名單為準）",
+    "networkUrl": null
   },
   {
     "id": "the-center",
@@ -2443,7 +2949,13 @@
     "notes": "不在運輸署560開放數據內；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/the-center/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "landmark",
@@ -2469,7 +2981,13 @@
     "notes": "中環置地系列（遮打／歷山／太子共用禮賓代客泊車）；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/landmark/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須 BESPOKE 雋環會員（香港置地中區會員計劃；經「LANDMARK」App 管理 Bespoke Dollars）：消費免泊以 BESPOKE 會員電子消費計算；App 內可賺分及以 Bespoke Dollars 支付",
+    "appIos": "https://apps.apple.com/hk/app/id1172087580",
+    "appAndroid": "https://play.google.com/store/search?q=LANDMARK%20HONGKONG&c=apps",
+    "fuelPerks": null,
+    "networkScope": "BESPOKE 雋環會員電子消費＝香港置地中區物業商戶（置地廣場／交易廣場／遮打大廈一帶；以官方商戶名單為準）",
+    "networkUrl": null
   },
   {
     "id": "chater-house",
@@ -2495,7 +3013,13 @@
     "notes": "資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/chater-house/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "須 BESPOKE 雋環會員（香港置地中區會員計劃；經「LANDMARK」App 管理 Bespoke Dollars）：消費免泊以 BESPOKE 會員電子消費計算（官方詳情頁未能讀取，到埗確認）",
+    "appIos": "https://apps.apple.com/hk/app/id1172087580",
+    "appAndroid": "https://play.google.com/store/search?q=LANDMARK%20HONGKONG&c=apps",
+    "fuelPerks": null,
+    "networkScope": "BESPOKE 雋環會員電子消費＝香港置地中區物業商戶（置地廣場／交易廣場／遮打大廈一帶；以官方商戶名單為準）",
+    "networkUrl": null
   },
   {
     "id": "cheung-kong-centre",
@@ -2525,7 +3049,13 @@
     "notes": "資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/cheung-kong-centre-ckc18/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": "長江集團中心商戶（6小時優惠限指定商戶：food le parc／watsonsLab／豐澤TechLife／Watson's Wine）",
+    "networkUrl": null
   },
   {
     "id": "wing-on-centre",
@@ -2542,7 +3072,13 @@
     "notes": "上環永安百貨大樓；3/F設evMega快趣充快速×4＋Tesla×2；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/wing-on-centre/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "the-peak-galleria",
@@ -2559,7 +3095,13 @@
     "notes": "山頂標誌性商場車場；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/the-peak-galleria/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "恒隆商場：「hello by Hang Lung Malls」App（山頂廣場為 hello 網絡商場）；未查到現行消費免泊優惠",
+    "appIos": "https://apps.apple.com/hk/app/id1552869071",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.hanglung.hanglungmalls",
+    "fuelPerks": null,
+    "networkScope": "山頂廣場（恒隆）商戶",
+    "networkUrl": null
   },
   {
     "id": "north-point-centre",
@@ -2576,7 +3118,13 @@
     "notes": "北角英皇道；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/north-point-centre/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "pccw-tower",
@@ -2602,7 +3150,13 @@
     "notes": "B3設Halo Energy 7kW免費中速充電×14；限高2.4米；時租及優惠自kkleo（最後更新2026-08-24，來源taikooplace.com）；座標為約數（±100米）。",
     "sourceUrl": "https://kkleo.com/car-park/quarry-bay-pccw-tower",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：憑太古坊／太古城中心指定商戶即日電子消費收據換領（太古城中心B2換領處）；或「TAIKOO+」App（LIVE+ 會員免觸式，限太古城中心停車場）",
+    "appIos": "https://apps.apple.com/hk/app/id1583514972",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.taikooplus.app",
+    "fuelPerks": null,
+    "networkScope": "太古城中心商戶＋太古城及EAST Hong Kong食肆＋太古坊指定商戶（Swire 網絡；不含 Food le Parc、冰上皇宮學費、銀行、英皇道1111號及太古灣道12/14號商戶等）",
+    "networkUrl": "https://www.taikooplace.com/zh-hk/our-community/free-parking-at-taikoo-place"
   },
   {
     "id": "ocean-park",
@@ -2619,7 +3173,13 @@
     "notes": "大樹灣／正門停車場；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/ocean-park/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "stanley-plaza",
@@ -2636,7 +3196,13 @@
     "notes": "美利樓／赤柱市集一帶主要車場；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/stanley-plaza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "赤柱廣場；未查到現行消費免泊優惠",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "repulse-bay-arcade",
@@ -2653,7 +3219,13 @@
     "notes": "影灣園商場（淺水灣泳灘旁）；KINETA快充／中速充電；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/the-repulse-bay-arcade/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "one-island-south",
@@ -2670,7 +3242,13 @@
     "notes": "黃竹坑食圈／THE SOUTHSIDE 旁甲廈；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/one-island-south/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "empire-centre",
@@ -2687,7 +3265,13 @@
     "notes": "尖東麼地道雙子樓（帝國中心＋尖沙咀中心）；信和電動車時租8折優惠；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/empire-centre/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "帝國中心為信和旗下物業（S+ Rewards 會員網絡）；未查到消費免泊優惠",
+    "appIos": "https://apps.apple.com/hk/app/id1440803468",
+    "appAndroid": "https://play.google.com/store/search?q=S%2B%20Rewards%20%E4%BF%A1%E5%92%8C%E7%8D%8E%E8%B3%9E&c=apps",
+    "fuelPerks": null,
+    "networkScope": "帝國中心商戶",
+    "networkUrl": null
   },
   {
     "id": "china-hong-kong-city",
@@ -2704,7 +3288,13 @@
     "notes": "中國客運碼頭上蓋；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/china-hong-kong-city/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "中港城為信和旗下物業（S+ Rewards 會員網絡）；未查到消費免泊優惠",
+    "appIos": "https://apps.apple.com/hk/app/id1440803468",
+    "appAndroid": "https://play.google.com/store/search?q=S%2B%20Rewards%20%E4%BF%A1%E5%92%8C%E7%8D%8E%E8%B3%9E&c=apps",
+    "fuelPerks": null,
+    "networkScope": "中港城商戶",
+    "networkUrl": null
   },
   {
     "id": "wing-on-kowloon-centre",
@@ -2730,7 +3320,13 @@
     "notes": "只供永安顧客免泊、無時租選項；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/wing-on-kowloon-centre/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須 app：只供永安百貨顧客免泊（憑即日永安百貨發票）；車場無時租選項",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": "九龍永安中心永安百貨發票",
+    "networkUrl": null
   },
   {
     "id": "chinachem-golden-plaza",
@@ -2747,7 +3343,13 @@
     "notes": "尖東；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/chinachem-golden-plaza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "華懋旗下物業（「如心賞」會員網絡）；未查到消費免泊優惠",
+    "appIos": "https://apps.apple.com/hk/app/id6451194284",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.chinachemgroup.ccghearts",
+    "fuelPerks": null,
+    "networkScope": "華懋廣場商戶",
+    "networkUrl": null
   },
   {
     "id": "one-mong-kok-road-commercial-centre",
@@ -2764,7 +3366,13 @@
     "notes": "旺角核心區少有公眾車場之一；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/one-mong-kok-road-commercial-centre/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "the-quinn",
@@ -2781,7 +3389,13 @@
     "notes": "大角咀利奧坊商圈；平治EQ中速×3＋快趣充×6；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/the-quinn-square-mile/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "利奧坊為「H COINS」恒基商場獎賞網絡項目（App 賺分換獎賞）；未查到消費免泊優惠",
+    "appIos": "https://apps.apple.com/hk/app/id1519753346",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.henderson.hcoins",
+    "fuelPerks": null,
+    "networkScope": "利奧坊（Square Mile）商戶；H COINS 網絡＝恒基地產14個項目",
+    "networkUrl": null
   },
   {
     "id": "kai-tak-cruise-terminal",
@@ -2798,7 +3412,13 @@
     "notes": "郵輪碼頭頂層公園＋觀景；1/F設Tesla V2×6＋英式標準×36；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/kai-tak-cruise-terminal/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "millennium-city-1",
@@ -2815,7 +3435,13 @@
     "notes": "已存在於運輸署560開放數據（名稱「創紀之城1期」），可掛實時空位；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/millennium-city-1/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "millennium-city-6",
@@ -2832,7 +3458,13 @@
     "notes": "已存在於運輸署560開放數據（名稱「創紀之城6期」）；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/millennium-city-6/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "kwun-tong-harbour-plaza",
@@ -2849,7 +3481,13 @@
     "notes": "觀塘海濱／碼頭食區；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/kwun-tong-harbour-plaza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "enterprise-square-one",
@@ -2866,7 +3504,13 @@
     "notes": "九龍灣商貿區（鄰MegaBox）；座標為約數（±100米）；資料自kkleo（最後更新2026-08-23）。",
     "sourceUrl": "https://kkleo.com/car-park/kowloon-bay-enterprise-square-one",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "temple-mall-north",
@@ -2883,7 +3527,13 @@
     "notes": "黃大仙祠旁；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/temple-mall-north/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "領展物業（黃大仙中心北館）；未查到消費免泊優惠",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "temple-mall-south",
@@ -2900,7 +3550,13 @@
     "notes": "資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/temple-mall-south-car-park-a/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "領展物業（黃大仙中心南館）；未查到消費免泊優惠",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "san-po-kong-plaza",
@@ -2917,7 +3573,13 @@
     "notes": "新蒲崗食區主要室內車場；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/san-po-kong-plaza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "909-cheung-sha-wan-road",
@@ -2934,7 +3596,13 @@
     "notes": "長沙灣商貿區低價車場；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/909-cheung-sha-wan-road/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "shatin-galleria",
@@ -2951,7 +3619,13 @@
     "notes": "火炭（山尾街）工商食區；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/shatin-galleria/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "sha-tin-town-hall",
@@ -2968,7 +3642,13 @@
     "notes": "公共文娛場館車場，區內最平之一；中速充電×5；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/sha-tin-town-hall/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "penfold-park",
@@ -2985,7 +3665,13 @@
     "notes": "郊遊＋賽馬日兩用車場；免費首3小時為carparkhero所載條款（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/penfold-park-car-park-sha-tin-racecourse/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "tuen-mun-trend-plaza",
@@ -3002,7 +3688,13 @@
     "notes": "屯門市中心；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/tuen-mun-trend-plaza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "屯門時代廣場為「H COINS」恒基商場獎賞網絡項目（App 賺分換獎賞）；未查到現行消費免泊優惠",
+    "appIos": "https://apps.apple.com/hk/app/id1519753346",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.henderson.hcoins",
+    "fuelPerks": null,
+    "networkScope": "屯門時代廣場商戶；H COINS 網絡＝恒基地產14個項目",
+    "networkUrl": null
   },
   {
     "id": "gold-coast-piazza",
@@ -3019,7 +3711,13 @@
     "notes": "黃金海岸海濱食區（屯門最受歡迎駕車晚飯點之一）；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/gold-coast-piazza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "黃金海岸商場為信和旗下物業（S+ Rewards 會員網絡）；未查到消費免泊優惠",
+    "appIos": "https://apps.apple.com/hk/app/id1440803468",
+    "appAndroid": "https://play.google.com/store/search?q=S%2B%20Rewards%20%E4%BF%A1%E5%92%8C%E7%8D%8E%E8%B3%9E&c=apps",
+    "fuelPerks": null,
+    "networkScope": "黃金海岸商場商戶",
+    "networkUrl": null
   },
   {
     "id": "yuen-long-plaza",
@@ -3036,7 +3734,13 @@
     "notes": "元朗市中心；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/yuen-long-plaza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "元朗廣場為「The Point by SHKP」參與新地商場（App 會員積分／泊車優惠網絡）；現行消費免泊優惠未查到",
+    "appIos": "https://apps.apple.com/hk/app/id1181866241",
+    "appAndroid": "https://play.google.com/store/apps/details?id=com.shkp.shkmalls",
+    "fuelPerks": null,
+    "networkScope": "元朗廣場商戶；The Point 網絡＝全港29個新地商場（會員積分跨商場通用；消費免泊則以本商場單據計算）",
+    "networkUrl": null
   },
   {
     "id": "kingswood-richly-plaza",
@@ -3053,7 +3757,13 @@
     "notes": "天水圍最大的駕車消費點；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/kingswood-richly-plaza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "kwai-chung-plaza",
@@ -3070,7 +3780,13 @@
     "notes": "葵芳站旁大型私樓商場；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/kwai-chung-plaza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "papillons-square",
@@ -3096,7 +3812,13 @@
     "notes": "將軍澳南海景餐廳商圈（海翩滙基座）；中速充電×3（每小時$15）；資料自kkleo（2026-10-25讀取）。",
     "sourceUrl": "https://kkleo.com/car-park/tseung-kwun-o-papillons-square",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "hong-kong-disneyland",
@@ -3118,7 +3840,13 @@
     "notes": "樂園正門停車場；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/hong-kong-disneyland-/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "毋須泊車 app：優惠憑即日迪士尼三間酒店餐飲或購物消費滿$500（換領位置官方未載明，到埗確認）",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": "迪士尼三間酒店（香港迪士尼樂園酒店／迪士尼好萊塢酒店／迪士尼探索家酒店）餐飲或購物",
+    "networkUrl": null
   },
   {
     "id": "yat-tung-shopping-centre",
@@ -3135,7 +3863,13 @@
     "notes": "東涌逸東邨商場（逸東廣場）；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/yat-tung-estate-car-park-2-3-sin-yat-yat-tung-shopping-centre/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": "逸東商場（逸東邨商場）；未查到消費免泊優惠",
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   },
   {
     "id": "cambridge-plaza",
@@ -3152,6 +3886,12 @@
     "notes": "上水站旁商場（彩園／上水廣場以外另一選擇）；資料自carparkhero（2026-10-25讀取）。",
     "sourceUrl": "https://www.carparkhero.com/car-park/cambridge-plaza/",
     "verified": true,
-    "asOf": "2026-10-25"
+    "asOf": "2026-10-25",
+    "appText": null,
+    "appIos": null,
+    "appAndroid": null,
+    "fuelPerks": null,
+    "networkScope": null,
+    "networkUrl": null
   }
 ]

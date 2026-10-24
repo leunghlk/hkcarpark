@@ -37,6 +37,9 @@ def slug(s: str) -> str:
     return "cur-" + s[:40]
 
 
+XTRA_FIELDS = ("appText", "appIos", "appAndroid", "fuelPerks", "networkScope", "networkUrl")
+
+
 def main() -> None:
     raw = fetch(TD_BASIC).decode("utf-8-sig")  # TD file starts with a UTF-8 BOM
     parks = json.loads(raw)["car_park"]
@@ -65,6 +68,7 @@ def main() -> None:
             "mallSource": None,
             "mallVerified": None,
             "mallAsOf": None,
+            **{k: None for k in XTRA_FIELDS},
             "source": "td",
         })
     print(f"TD parks: {len(recs)}")
@@ -95,6 +99,8 @@ def main() -> None:
     unmatched = []
     for c in rules:
         keys = [norm(c.get(k, "")) for k in ("nameEn", "nameZh")]
+        keys += [norm(a) for a in (c.get("aliases") or [])]
+        keys = [k for k in keys if k]
         cands = []
         for k in keys:
             if not k:
@@ -102,18 +108,28 @@ def main() -> None:
             for nk, rs in td_by_norm.items():
                 if k and nk and (k in nk or nk in k):
                     cands.extend(rs)
-        cands = [r for r in cands if r["id"] not in matched_td_ids] or cands
-        if cands:
-            best = min(cands, key=lambda r: abs(len(norm(r["name_en"])) - len(keys[0])))
-            matched_td_ids.add(best["id"])
-            best["mall"] = True
-            best["hourly"] = c.get("hourly")
-            best["consumptionFree"] = c.get("consumptionFree")
-            best["freeRulesText"] = c.get("freeRulesText")
-            best["mallNotes"] = c.get("notes")
-            best["mallSource"] = c.get("sourceUrl")
-            best["mallVerified"] = c.get("verified")
-            best["mallAsOf"] = c.get("asOf")
+        # dedupe, keep list order stable
+        seen = set()
+        cands = [r for r in cands if not (r["id"] in seen or seen.add(r["id"]))]
+        free = [r for r in cands if r["id"] not in matched_td_ids]
+        targets = free or cands
+        if targets:
+            if c.get("matchAll"):
+                picked = targets
+            else:
+                picked = [min(targets, key=lambda r: abs(len(norm(r["name_en"])) - len(keys[0])))]
+            for best in picked:
+                matched_td_ids.add(best["id"])
+                best["mall"] = True
+                best["hourly"] = c.get("hourly")
+                best["consumptionFree"] = c.get("consumptionFree")
+                best["freeRulesText"] = c.get("freeRulesText")
+                best["mallNotes"] = c.get("notes")
+                best["mallSource"] = c.get("sourceUrl")
+                best["mallVerified"] = c.get("verified")
+                best["mallAsOf"] = c.get("asOf")
+                for k in XTRA_FIELDS:
+                    best[k] = c.get(k)
         else:
             # curated-only mall (no TD record → no live vacancy)
             recs.append({
@@ -133,6 +149,7 @@ def main() -> None:
                 "mallSource": c.get("sourceUrl"),
                 "mallVerified": c.get("verified"),
                 "mallAsOf": c.get("asOf"),
+                **{k: c.get(k) for k in XTRA_FIELDS},
                 "source": "curated",
             })
             unmatched.append(c.get("nameZh") or c.get("nameEn"))
