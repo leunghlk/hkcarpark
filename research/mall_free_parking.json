@@ -1,0 +1,2226 @@
+[
+  {
+    "id": "times-square",
+    "nameZh": "時代廣場",
+    "nameEn": "Times Square",
+    "addressZh": "香港銅鑼灣勿地臣街1號",
+    "region": "港島",
+    "district": "灣仔區",
+    "lat": 22.27854,
+    "lng": 114.182174,
+    "hourly": "平日$18/半小時、$8/半小時（23:00–07:00）；週六日及公眾假期$19/半小時、$8/半小時（23:00–07:00）",
+    "consumptionFree": [
+      {
+        "spend": "300（平日，電子消費）",
+        "hours": "3"
+      },
+      {
+        "spend": "300（假日，電子消費）",
+        "hours": "2"
+      },
+      {
+        "spend": "200（週日至五16:00後入車）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "推廣期由2026年1月1日起：即日單一電子消費滿$300享泊車優惠（平日最多3小時）；週日至五下午4時後入車消費滿$200即享3小時免費泊車（週六及公眾假期除外），隨後每半小時$18/19。",
+    "notes": "24小時開放，4層地庫約700車位；只限私家車，每車每日一次；優惠須離場前辦理。",
+    "sourceUrl": "https://timessquare.com.hk/zh-hant/happenings/3%e5%b0%8f%e6%99%82%e5%85%8d%e8%b2%bb%e6%b3%8a%e8%bb%8a-2026/",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "hysan-place",
+    "nameZh": "希慎廣場",
+    "nameEn": "Hysan Place",
+    "addressZh": "香港銅鑼灣軒尼詩道500號",
+    "region": "港島",
+    "district": "灣仔區",
+    "lat": 22.2795933,
+    "lng": 114.1839629,
+    "hourly": "$36/小時",
+    "consumptionFree": [
+      {
+        "spend": "400（星期一至四）",
+        "hours": "3"
+      },
+      {
+        "spend": "600（星期五六日及公眾假期）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "利園區商戶即日電子消費滿指定金額換領3小時免費泊車；最多累積2張即日機印單據；於希慎廣場1樓禮賓部換領（10:00–23:00）。",
+    "notes": "利園區（希慎廣場/利園一至三期/禮頓中心）優惠互通。資料由hkfreeparking轉載（更新10/8/2026），官方頁面為JS渲染未能直接讀取。",
+    "sourceUrl": "https://www.leegardens.com.hk/car-park-promotion.aspx?lang=zh-HK",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "lee-garden",
+    "nameZh": "利園（一至三期）",
+    "nameEn": "Lee Garden One to Three",
+    "addressZh": "香港銅鑼灣恩平道28號（利園二期）",
+    "region": "港島",
+    "district": "灣仔區",
+    "lat": 22.2786549,
+    "lng": 114.1855497,
+    "hourly": "一期$40/小時（平日）、$44/小時（假日）；二、三期約$36–38/小時",
+    "consumptionFree": [
+      {
+        "spend": "400（星期一至四）",
+        "hours": "3"
+      },
+      {
+        "spend": "600（星期五六日及公眾假期）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "利園區商戶消費滿指定金額換領3小時免費泊車（星期五當假日計），最多2張即日機印單據。",
+    "notes": "與希慎廣場/禮頓中心優惠互通。hkfreeparking更新26/1/2026。",
+    "sourceUrl": "https://www.leegardens.com.hk/car-park-promotion.aspx?lang=zh-HK",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "leighton-centre",
+    "nameZh": "禮頓中心",
+    "nameEn": "The Lee Gardens (Leighton Centre)",
+    "addressZh": "香港銅鑼灣希慎道33號",
+    "region": "港島",
+    "district": "灣仔區",
+    "lat": 22.2784388,
+    "lng": 114.1847145,
+    "hourly": "$28/小時",
+    "consumptionFree": [
+      {
+        "spend": "200（星期一至四）",
+        "hours": "3"
+      },
+      {
+        "spend": "300（星期五六日及公眾假期）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "利園區商戶消費滿指定金額換領3小時免費泊車（星期五當假日計）。",
+    "notes": "禮頓中心停車場門檻較利園一至三期低。hkfreeparking更新26/1/2026。",
+    "sourceUrl": "https://www.leegardens.com.hk/car-park-promotion.aspx?lang=zh-HK",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "windsor-house",
+    "nameZh": "皇室堡",
+    "nameEn": "Windsor House",
+    "addressZh": "香港銅鑼灣告士打道311號",
+    "region": "港島",
+    "district": "灣仔區",
+    "lat": 22.2803762,
+    "lng": 114.1865518,
+    "hourly": "$42/小時（平日）；$50/小時（假日，星期五當假日計）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "500",
+        "hours": "3"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "600（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "平日11:00–17:00餐飲消費$100享1小時/$200享2小時；餐飲+任何商戶單據最高5小時。",
+    "notes": "hkfreeparking更新26/1/2026。",
+    "sourceUrl": "https://www.windsorhouse.hk/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "wtc",
+    "nameZh": "WTC 世貿中心",
+    "nameEn": "World Trade Centre",
+    "addressZh": "香港銅鑼灣告士打道280號",
+    "region": "港島",
+    "district": "灣仔區",
+    "lat": 22.2819499,
+    "lng": 114.1841731,
+    "hourly": "$40/小時（平日日間）；$48/小時（假日及星期五）；$10/小時（23:00–08:00）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "3"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "600（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "10:00–23:00入車；最多2張收據；平日日泊$180（08:00–18:00）。",
+    "notes": "hkfreeparking更新26/1/2026；carparkhero時租數字一致。",
+    "sourceUrl": "https://www.wwwtc.hk/tc/parking",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "fashion-walk",
+    "nameZh": "Fashion Walk",
+    "nameEn": "Fashion Walk",
+    "addressZh": "香港銅鑼灣記利佐治街",
+    "region": "港島",
+    "district": "灣仔區",
+    "lat": 22.280815,
+    "lng": 114.1852378,
+    "hourly": "$38/小時",
+    "consumptionFree": [
+      {
+        "spend": "400",
+        "hours": "1"
+      },
+      {
+        "spend": "800",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "每日消費滿$400免費泊車1小時、滿$800免2小時。",
+    "notes": "恒隆商場。hkfreeparking更新26/1/2026。",
+    "sourceUrl": "https://www.hanglungmalls.com/fashion-walk",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "pacific-place",
+    "nameZh": "太古廣場",
+    "nameEn": "Pacific Place",
+    "addressZh": "香港金鐘金鐘道88號",
+    "region": "港島",
+    "district": "中西區",
+    "lat": 22.2772459,
+    "lng": 114.1649087,
+    "hourly": "$39/小時（hkfreeparking 2026-08；carparkhero 2024年載$33，需再核實）",
+    "consumptionFree": [
+      {
+        "spend": "500（全日累積）",
+        "hours": "3"
+      },
+      {
+        "spend": "300（17:00後累積）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "於太古廣場、三座、六座及星街小區指定商戶即日電子消費累積滿$500（或下午5時後滿$300）享3小時免費泊車；每車每日最多5小時。",
+    "notes": "above Blue會員額外1小時；「Pacific Place Offices」App用戶額外1小時（至2026-12-31）。規則已於官方頁面核實；時租數字未於官方頁面直接讀到。",
+    "sourceUrl": "https://www.pacificplace.com.hk/zh-hk/entertainment/happenings/free-parking",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "admiralty-centre",
+    "nameZh": "海富中心",
+    "nameEn": "Admiralty Centre",
+    "addressZh": "香港金鐘夏愨道18號",
+    "region": "港島",
+    "district": "中西區",
+    "lat": 22.282,
+    "lng": 114.1655,
+    "hourly": "$36/小時（07:00–23:00）；$22/小時（23:00–07:00）",
+    "consumptionFree": null,
+    "freeRulesText": null,
+    "notes": "日泊$210（07:00–19:00）、夜泊$110（19:00–07:00）；威信停車場營運；東鐵綫過海段半價時租優惠。",
+    "sourceUrl": "未查到消費免費泊車優惠。carparkhero更新20/5/2025。",
+    "verified": "https://www.carparkhero.com/car-park/admiralty-car-park-block-a-harcourt-road/",
+    "asOf": false
+  },
+  {
+    "id": "united-centre",
+    "nameZh": "統一中心",
+    "nameEn": "United Centre",
+    "addressZh": "香港金鐘道95號",
+    "region": "港島",
+    "district": "中西區",
+    "lat": 22.278,
+    "lng": 114.165,
+    "hourly": "$30/小時（平日）；$25/小時（週末及公眾假期）",
+    "consumptionFree": null,
+    "freeRulesText": null,
+    "notes": "日泊$150（平日）、$100（週末假）；夜泊$80（19:00–07:00）。",
+    "sourceUrl": "carparkhero資料更新2/3/2023，較舊，到埗宜核實；未查到消費優惠。",
+    "verified": "https://www.carparkhero.com/car-park/united-centre/",
+    "asOf": false
+  },
+  {
+    "id": "ifc-mall",
+    "nameZh": "ifc mall（國際金融中心商場）",
+    "nameEn": "ifc mall",
+    "addressZh": "香港中環金融街8號",
+    "region": "港島",
+    "district": "中西區",
+    "lat": 22.28588,
+    "lng": 114.158131,
+    "hourly": "$34/小時（自泊，hkfreeparking 2026-02）；代客泊車$60/小時（最少1小時）",
+    "consumptionFree": [
+      {
+        "spend": "300",
+        "hours": "2"
+      },
+      {
+        "spend": "500",
+        "hours": "3"
+      },
+      {
+        "spend": "2000（代客泊車券，最多3張單據）",
+        "hours": "4"
+      }
+    ],
+    "freeRulesText": "商場消費滿$300免2小時、滿$500免3小時；消費滿$2,000可換4小時免費代客泊車券（官方核實）。",
+    "notes": "ifc mall一、二期停車場；代客泊車位於二期停車場正門。時租自泊數字由hkfreeparking轉載。",
+    "sourceUrl": "https://ifc.com.hk/tc/mall/parking/",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "shun-tak-centre",
+    "nameZh": "信德中心",
+    "nameEn": "Shun Tak Centre",
+    "addressZh": "香港上環干諾道中200號",
+    "region": "港島",
+    "district": "中西區",
+    "lat": 22.2881,
+    "lng": 114.1531,
+    "hourly": "$28/小時",
+    "consumptionFree": null,
+    "freeRulesText": null,
+    "notes": "信德中心／港澳碼頭停車場。",
+    "sourceUrl": "未查到消費優惠；carparkhero更新18/12/2024。",
+    "verified": "https://www.carparkhero.com/car-park/shun-tak-centre/",
+    "asOf": false
+  },
+  {
+    "id": "island-place",
+    "nameZh": "港運城",
+    "nameEn": "Island Place",
+    "addressZh": "香港北角英皇道18號",
+    "region": "港島",
+    "district": "東區",
+    "lat": 22.2905,
+    "lng": 114.1998,
+    "hourly": "$22/小時",
+    "consumptionFree": null,
+    "freeRulesText": null,
+    "notes": "北角港運城停車場。",
+    "sourceUrl": "未查到消費優惠；carparkhero更新30/4/2023，資料較舊。",
+    "verified": "https://www.carparkhero.com/car-park/island-place/",
+    "asOf": false
+  },
+  {
+    "id": "harbour-north",
+    "nameZh": "北角匯",
+    "nameEn": "Harbour North",
+    "addressZh": "香港北角北角邨里1號",
+    "region": "港島",
+    "district": "東區",
+    "lat": 22.292768,
+    "lng": 114.1989849,
+    "hourly": "$33/小時（平日）；$38/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "800（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "免費泊車只限The Point會員；加碼賞：精選零售商戶單據滿$200額外送1張1小時券、滿$400送2張；一期尊屬代客泊車$80/小時（07:30–12:00）。",
+    "notes": "日泊$180（平日08:00–18:00）、夜泊$100（21:00–08:00）。官方頁面已核實優惠機制；金額由hkfreeparking轉載（22/1/2026）。",
+    "sourceUrl": "https://www.harbournorth.com.hk/zh/valet-parking-tc/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "cityplaza",
+    "nameZh": "太古城中心",
+    "nameEn": "Cityplaza",
+    "addressZh": "香港太古城太古城道18號",
+    "region": "港島",
+    "district": "東區",
+    "lat": 22.286721,
+    "lng": 114.217477,
+    "hourly": "$31/小時",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "300",
+        "hours": "5"
+      },
+      {
+        "spend": "MOViE MOViE戲票2張",
+        "hours": "5"
+      }
+    ],
+    "freeRulesText": "於太古城中心商戶、太古城或EAST香港食肆及太古坊指定商戶即日電子消費滿$200免2小時、滿$300免5小時；最多2張$100或以上收據；適用太古城中心或星輝臺停車場。",
+    "notes": "亦可以TAIKOO+ App換領（限太古城中心停車場、LIVE+會員免觸式泊車）。官方免費泊車頁已核實機制；時租及門檻由carparkhero/hkfreeparking轉載（26/1/2026）。",
+    "sourceUrl": "https://www.cityplaza.com/zh-hk/whatshot/promotions/2022/free-parking",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "taikoo-place",
+    "nameZh": "太古坊",
+    "nameEn": "Taikoo Place",
+    "addressZh": "香港鰂魚涌太古坊",
+    "region": "港島",
+    "district": "東區",
+    "lat": 22.2872229,
+    "lng": 114.2110848,
+    "hourly": "二座$23/小時（carparkhero）；hkfreeparking載太古坊$28/小時",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "3"
+      },
+      {
+        "spend": "300（假日，最多2張）",
+        "hours": "5"
+      }
+    ],
+    "freeRulesText": "太古坊指定食肆及商店、太古城中心商戶或東隅酒店食肆電子消費滿$200享3小時免費泊車；假日最多2張滿$300單據享5小時；MOViE MOViE戲票2張亦可。",
+    "notes": "適用任何日子07:00–23:59。hkfreeparking更新2/4/2026。",
+    "sourceUrl": "https://www.taikooplace.com/zh-hk/our-community/free-parking-at-taikoo-place",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "kornhill-plaza",
+    "nameZh": "康怡廣場",
+    "nameEn": "Kornhill Plaza",
+    "addressZh": "香港鰂魚涌康山道1號",
+    "region": "港島",
+    "district": "東區",
+    "lat": 22.2848725,
+    "lng": 114.2153462,
+    "hourly": "$27/小時",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "300",
+        "hours": "4"
+      }
+    ],
+    "freeRulesText": "每日消費滿$200免2小時、滿$300免4小時；AEON STYLE消費滿$100額外1小時；最多2張$100以上收據。",
+    "notes": "恒隆商場。hkfreeparking更新26/1/2026。",
+    "sourceUrl": "https://www.hanglungmalls.com/kornhill-plaza",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "the-southside",
+    "nameZh": "THE SOUTHSIDE",
+    "nameEn": "THE SOUTHSIDE",
+    "addressZh": "香港黃竹坑香葉道11號",
+    "region": "港島",
+    "district": "南區",
+    "lat": 22.2473891,
+    "lng": 114.1675297,
+    "hourly": "$24/小時",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "500",
+        "hours": "3"
+      },
+      {
+        "spend": "英皇戲院Plus+戲票2張",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "每日消費滿$200免1小時、滿$500免3小時；平日10:00–17:59任何餐飲消費免2小時；平日18:00後$200最多4小時；2張英皇戲票免3小時；平日city'super消費$100額外+1小時。",
+    "notes": "hkfreeparking更新23/1/2026；carparkhero詳細時段表一致。",
+    "sourceUrl": "https://www.thesouthside.com.hk/tch/promotions/parking-promotion",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "harbour-city",
+    "nameZh": "海港城",
+    "nameEn": "Harbour City",
+    "addressZh": "九龍尖沙咀廣東道3-27號",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.2953381,
+    "lng": 114.1688303,
+    "hourly": "$34/小時（海運大廈停車場，每半小時$17，23:00–07:00每半小時$6）；港威/Gateway停車場繁忙時段$19/半小時（約$38/小時）",
+    "consumptionFree": [
+      {
+        "spend": "100",
+        "hours": "1"
+      },
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "300",
+        "hours": "3"
+      },
+      {
+        "spend": "100（餐廳堂食）",
+        "hours": "3"
+      },
+      {
+        "spend": "200（餐廳堂食）",
+        "hours": "4"
+      },
+      {
+        "spend": "300（餐廳堂食）",
+        "hours": "5"
+      }
+    ],
+    "freeRulesText": "每$100消費=1小時免費泊車（平日最多5小時、假日最多3小時）；餐廳堂食$100=3小時/$200=4小時/$300=5小時（至2026-04-26）。",
+    "notes": "多個停車場（海運大廈/海洋中心/港威/Gateway）收費有差異。hkfreeparking更新26/1/2026；官方頁面為JS渲染。",
+    "sourceUrl": "https://www.harbourcity.com.hk/tc/explore-hc/services-facilities/parking/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "k11-musea",
+    "nameZh": "K11 MUSEA",
+    "nameEn": "K11 MUSEA",
+    "addressZh": "九龍尖沙咀梳士巴利道18號",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.2941573,
+    "lng": 114.1739272,
+    "hourly": "$30/小時（平日）；$41/小時（假日，星期五當假日計）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "300",
+        "hours": "3"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "800（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "跨商場免費泊車禮遇（KLUB 11會員）：憑K11 MUSEA或K11 Art Mall即日消費單據換領。日泊$150（平日08:00–19:00）、夜泊$90（21:00–10:00）。",
+    "notes": "hkfreeparking更新26/1/2026；carparkhero時租一致。",
+    "sourceUrl": "https://www.k11musea.com/zh-hk/parking/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "k11-art-mall",
+    "nameZh": "K11 Art Mall",
+    "nameEn": "K11 Art Mall",
+    "addressZh": "九龍尖沙咀河內道18號",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.297525,
+    "lng": 114.1736355,
+    "hourly": "$39/小時（平日）；$41/小時（假日，星期五當假日計）",
+    "consumptionFree": [
+      {
+        "spend": "300",
+        "hours": "1"
+      },
+      {
+        "spend": "500",
+        "hours": "2"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "800（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "適用B4層停車場；最多累計2張$50以上收據；K11 MUSEA收據可共用；KLUB 11黑卡/金卡會員額外+2/+1小時。",
+    "notes": "hkfreeparking更新26/1/2026。",
+    "sourceUrl": "https://hk.k11.com/zh-hk/parking/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "isquare",
+    "nameZh": "iSQUARE 國際廣場",
+    "nameEn": "iSQUARE",
+    "addressZh": "九龍尖沙咀彌敦道63號",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.297025,
+    "lng": 114.1718959,
+    "hourly": "$50/小時（平日）；$60/小時（假日）—只提供代客泊車",
+    "consumptionFree": [
+      {
+        "spend": "600",
+        "hours": "1"
+      },
+      {
+        "spend": "1000",
+        "hours": "2"
+      },
+      {
+        "spend": "800（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "1500（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "代客泊車服務時間11:00–24:00；iCLUB會員額外1小時。",
+    "notes": "hkfreeparking更新10/8/2026。",
+    "sourceUrl": "https://www.isquare.hk/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "the-one",
+    "nameZh": "The ONE",
+    "nameEn": "The ONE",
+    "addressZh": "九龍尖沙咀彌敦道100號",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.2998217,
+    "lng": 114.1726855,
+    "hourly": "$41/小時（平日）；$43/小時（假日，星期五當假日計）",
+    "consumptionFree": [
+      {
+        "spend": "300",
+        "hours": "1"
+      },
+      {
+        "spend": "500",
+        "hours": "2"
+      },
+      {
+        "spend": "800",
+        "hours": "3"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "800（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "1200（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "平日11:00–17:00餐飲$100享1小時/$200享2小時；餐飲+任何商戶單據最高5小時。",
+    "notes": "hkfreeparking更新26/1/2026。",
+    "sourceUrl": "https://www.the-one.hk/tc/gettingthere/parking.asp",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "mira-place",
+    "nameZh": "美麗華",
+    "nameEn": "Mira Place",
+    "addressZh": "九龍尖沙咀彌敦道132號",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.3016,
+    "lng": 114.1745,
+    "hourly": "繁忙時段07:00–23:00每小時$41–43；非繁忙23:00–07:00每小時$8（2026年10–11月「T-Central無憂泊」推廣）",
+    "consumptionFree": null,
+    "freeRulesText": null,
+    "notes": "日泊$200（平日07:00入場至18:30）、夜泊$80（23:00後入場）；最低收費一小時；2026年1月1日起生效。",
+    "sourceUrl": "官方停車場頁面已核實收費；官方頁面未見消費免費泊車scheme（會員App或另有推廣）。",
+    "verified": "https://www.miraplace.com.hk/tc/parking",
+    "asOf": true
+  },
+  {
+    "id": "langham-place",
+    "nameZh": "朗豪坊",
+    "nameEn": "Langham Place",
+    "addressZh": "九龍旺角亞皆老街8號",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.3182116,
+    "lng": 114.1686743,
+    "hourly": "$37/小時（星期一至四）；$41/小時（星期五至日及公眾假期）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "600（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "憑最多2張不同商舖即日電子消費單據換領；平日即日戲票2張額外1小時；LP CLUB會員額外1小時。carparkhero另載食肆消費$200=4小時/$400=6小時、非食肆$200=2小時/$400=4小時（2025-11版本）。",
+    "notes": "夜泊22:00–08:00 $120；EV充電於B4。時租已於官方頁面核實；消費門檻兩個第三方來源有差異，到埗宜以商場公佈為準。",
+    "sourceUrl": "https://www.langhamplace.com.hk/zh-hk/visit-us/parking",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "moko",
+    "nameZh": "新世紀廣場（MOKO）",
+    "nameEn": "MOKO",
+    "addressZh": "九龍旺角太子道西193號",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.3231937,
+    "lng": 114.1723194,
+    "hourly": "$32/小時（星期一至五）；$37/小時（星期六日及公眾假期）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "3"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "100（指定食肆或戲院）",
+        "hours": "+1"
+      }
+    ],
+    "freeRulesText": "The Point會員：平日電子消費滿$200享3小時、假日滿$400享2小時；指定食肆或戲院單一消費滿$100額外1小時；每日上限平日4小時/假日3小時；最多2張即日機印發票。",
+    "notes": "夜泊22:00–07:00 $90。官方頁面已核實收費及優惠條款。",
+    "sourceUrl": "https://www.moko.com.hk/about-moko/parking/",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "festival-walk",
+    "nameZh": "又一城",
+    "nameEn": "Festival Walk",
+    "addressZh": "九龍九龍塘達之路80號",
+    "region": "九龍",
+    "district": "深水埗區",
+    "lat": 22.337381,
+    "lng": 114.1744322,
+    "hourly": "$24/小時（星期一至四）；$26/小時（星期五至日及公眾假期）",
+    "consumptionFree": [
+      {
+        "spend": "200（星期一至四，電子消費）",
+        "hours": "2"
+      },
+      {
+        "spend": "500（星期五至日及假期，電子消費）",
+        "hours": "2"
+      },
+      {
+        "spend": "0（17:00後入場首小時）",
+        "hours": "1"
+      }
+    ],
+    "freeRulesText": "5pm後入場首1小時免費（毋須消費）；電子消費滿$200（一至四）或$500（五至日及假期）免2小時；「3送1」平日泊滿3小時第4小時免費；最多累積2套即日收據；免費總數最多3小時。",
+    "notes": "日泊$130（平日07:00–24:00）、夜泊$100（21:00–08:00）。官方頁面已核實。",
+    "sourceUrl": "https://www.festivalwalk.com.hk/en/parking/",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "olympian-city",
+    "nameZh": "奧海城",
+    "nameEn": "Olympian City",
+    "addressZh": "九龍大角咀海庭道11號（1期）／海庭道18號（2及3期）",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.3167357,
+    "lng": 114.1615929,
+    "hourly": "平日：1期$22、2期$18、3期$21；假日：1期$19、2期$20、3期$25（每小時）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "300（假日，2及3期）",
+        "hours": "1"
+      },
+      {
+        "spend": "600（假日，2及3期）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "S⁺ REWARDS會員憑即日電子消費換領；5pm後消費$100享額外1小時夜泊優惠；1期另有泊車轉乘港鐵優惠。",
+    "notes": "hkfreeparking更新10/8/2026及26/1/2026；carparkhero時租一致。",
+    "sourceUrl": "https://www.olympiancity.com.hk/tc/Promotion/400",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "elements",
+    "nameZh": "圓方",
+    "nameEn": "ELEMENTS",
+    "addressZh": "九龍尖沙咀柯士甸道西1號",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.3048429,
+    "lng": 114.1632527,
+    "hourly": "$26/小時（星期一至日及公眾假期，24小時）",
+    "consumptionFree": [
+      {
+        "spend": "100（單一消費每滿）",
+        "hours": "1"
+      },
+      {
+        "spend": "2張PREMIERE CINEMAS戲票",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "泊車優惠適用任何時段；每滿HK$100=1小時；2張PREMIERE CINEMAS電影戲票=3小時；不可累積、每次入車只享一項；每日最多5小時。",
+    "notes": "約131個EV充電設備（DC $3/kWh、AC $2.6/kWh，2025-05-02起）；北停車場為主。官方頁面已核實；carparkhero另載南停車場$22/小時（2026-01）。",
+    "sourceUrl": "https://www.elementshk.com/tch/elements/location/parking",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "west-kowloon",
+    "nameZh": "西九文化區（藝術公園／M+）",
+    "nameEn": "West Kowloon Cultural District",
+    "addressZh": "九龍尖沙咀博物館道西九文化區",
+    "region": "九龍",
+    "district": "油尖旺區",
+    "lat": 22.3034757,
+    "lng": 114.1602846,
+    "hourly": "$28/小時（平日）；$32/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "指定餐廳、輕食店或美食車消費換領；08:00–22:00入車；最多2張收據。",
+    "notes": "藝術公園E區/F區停車場；M+停車場平日$28/假日$32（carparkhero）。hkfreeparking更新26/1/2026。",
+    "sourceUrl": "https://www.westk.hk/tc/visit/parking/privileges",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "whampoa",
+    "nameZh": "黃埔天地",
+    "nameEn": "The Whampoa",
+    "addressZh": "九龍紅磡黃埔花園",
+    "region": "九龍",
+    "district": "九龍城區",
+    "lat": 22.3047243,
+    "lng": 114.1903547,
+    "hourly": "$16/小時（平日）；$20/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "5pm–12am入車消費滿$100餐飲或2張戲票額外1小時；海濱廣場6pm後入車$200享2小時。",
+    "notes": "黃埔花園多期商場多個停車場收費相近。hkfreeparking更新10/8/2026。",
+    "sourceUrl": "https://www.thewhampoa.com/list/detail-670.html",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "ho-man-tin-plaza",
+    "nameZh": "何文田廣場",
+    "nameEn": "Ho Man Tin Plaza",
+    "addressZh": "九龍何文田佛光街80號",
+    "region": "九龍",
+    "district": "九龍城區",
+    "lat": 22.3162364,
+    "lng": 114.1818117,
+    "hourly": "$27/小時（平日）；$30/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      }
+    ],
+    "freeRulesText": "每日消費滿$200免1小時（優惠後仍需付$5/小時）；12小時任泊平日$145/假日$175。",
+    "notes": "領展物業。hkfreeparking更新7/8/2026。",
+    "sourceUrl": "https://www.linkhk.com/tc/parking/8424",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "mikiki",
+    "nameZh": "Mikiki",
+    "nameEn": "Mikiki",
+    "addressZh": "九龍新蒲崗太子道東638號",
+    "region": "九龍",
+    "district": "黃大仙區",
+    "lat": 22.3337412,
+    "lng": 114.1971587,
+    "hourly": "$28/小時（平日）；$30/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "消費換領免費泊車。",
+    "notes": "hkfreeparking更新24/2/2026（來源為商場宣傳圖）；carparkhero較舊載$24/小時。",
+    "sourceUrl": "https://www.mikiki-mall.com.hk/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "plaza-hollywood",
+    "nameZh": "荷里活廣場",
+    "nameEn": "Plaza Hollywood",
+    "addressZh": "九龍鑽石山龍蟠街3號",
+    "region": "九龍",
+    "district": "黃大仙區",
+    "lat": 22.3405929,
+    "lng": 114.2020184,
+    "hourly": "$20/小時（不足一小時作一小時計）",
+    "consumptionFree": [
+      {
+        "spend": "100",
+        "hours": "2"
+      },
+      {
+        "spend": "200",
+        "hours": "4"
+      },
+      {
+        "spend": "100（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "平日7pm後$100=3小時/$200=5小時；食肆消費額外1小時；戲票額外1小時；EV「電動車3小時免費泊車及充電服務」推廣。",
+    "notes": "時租已於官方頁面核實；優惠門檻由hkfreeparking轉載（10/8/2026）。換領：一樓明星廣場客戶服務中心。",
+    "sourceUrl": "https://www.plazahollywood.com.hk/tc/parking",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "megabox",
+    "nameZh": "MegaBox",
+    "nameEn": "MegaBox",
+    "addressZh": "九龍九龍灣宏照道38號",
+    "region": "九龍",
+    "district": "觀塘區",
+    "lat": 22.3199795,
+    "lng": 114.2084331,
+    "hourly": "$23–25/小時（平日，視樓層）；假日$26–29/小時；地庫$28–29/小時",
+    "consumptionFree": [
+      {
+        "spend": "100",
+        "hours": "1"
+      },
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "夜泊18:00–翌日10:00 $80（地庫及L5–L16，只接受八達通）；Tesla香港官方車主會＋Mega Club會員週末及假期2小時免費泊車。",
+    "notes": "hkfreeparking與carparkhero樓層時租有$2差異，需到埗核實。hkfreeparking更新10/8/2026。",
+    "sourceUrl": "https://www.megabox.com.hk/visit_us.php?lang=tchi",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "telford-plaza",
+    "nameZh": "德福廣場",
+    "nameEn": "Telford Plaza",
+    "addressZh": "九龍九龍灣偉業街33號",
+    "region": "九龍",
+    "district": "觀塘區",
+    "lat": 22.3233216,
+    "lng": 114.2135647,
+    "hourly": "$25/小時（星期一至日及公眾假期）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "每日消費滿$200免1小時、滿$400免2小時；平日18:00後消費$200或MCL戲票2張最高4小時；只接受2張即日電子消費單據。",
+    "notes": "1期106車位（8 EV）、2期96車位（41 EV）、D場77車位；AC充電$2.6/kWh。官方頁面已核實時租及停車場資訊；門檻由carparkhero/hkfreeparking轉載。",
+    "sourceUrl": "https://www.telford-plaza.com/tch/parking",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "apm",
+    "nameZh": "apm",
+    "nameEn": "apm",
+    "addressZh": "九龍觀塘觀塘道418號",
+    "region": "九龍",
+    "district": "觀塘區",
+    "lat": 22.312401,
+    "lng": 114.225222,
+    "hourly": "$28/小時",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "600",
+        "hours": "3"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "星期五當假日計；夜泊23:00–08:00 $100。",
+    "notes": "hkfreeparking更新26/1/2026；carparkhero一致。",
+    "sourceUrl": "https://www.hkapm.com.hk/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "ym2",
+    "nameZh": "YM² 裕民坊",
+    "nameEn": "Yue Man Square (YM²)",
+    "addressZh": "九龍觀塘協和街33號",
+    "region": "九龍",
+    "district": "觀塘區",
+    "lat": 22.3142611,
+    "lng": 114.22402,
+    "hourly": "$27/小時",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "每日消費換領（優惠至2026-03-31）；電動車充電用戶消費$400享3小時；最多2張$100以上收據；6pm後指定餐飲送$20券。",
+    "notes": "日泊由入場時間至23:59 $40（carparkhero）。hkfreeparking更新2/4/2026。",
+    "sourceUrl": "https://www.ym2.hk/tc/Promotion/554",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "airside",
+    "nameZh": "AIRSIDE",
+    "nameEn": "AIRSIDE",
+    "addressZh": "九龍啟德協調道2號",
+    "region": "九龍",
+    "district": "九龍城區",
+    "lat": 22.331322,
+    "lng": 114.198142,
+    "hourly": "$25/小時（平日）；$28/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "300",
+        "hours": "3"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "NF Touch會員額外1小時；MCL即日戲票2張額外2小時；最多5小時。日泊$140（平日08:00–19:00）、夜泊$90（21:00–08:00）。",
+    "notes": "官方泊車頁已核實存在；收費數字由hkfreeparking轉載（26/1/2026），carparkhero一致。",
+    "sourceUrl": "https://www.airside.com.hk/zh-hk/visit/parking",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "kai-tak-sports-park",
+    "nameZh": "啟德體育園",
+    "nameEn": "Kai Tak Sports Park",
+    "addressZh": "九龍啟德承啟道",
+    "region": "九龍",
+    "district": "九龍城區",
+    "lat": 22.3221699,
+    "lng": 114.1973555,
+    "hourly": "主場館$25/小時（平日）、$27/小時（假日）；體育館/青年運動場約$28/小時（平日）、$32/小時（假日）；22:00–07:00每小時$12–14",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "300",
+        "hours": "2"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "最多2張不同商戶收據；不適用於日泊車輛及大型活動日子；星期五按假日收費。",
+    "notes": "主場館停車場與體育館收費不同。hkfreeparking（主場館7/8/2026）及carparkhero（體育館19/9/2026）。",
+    "sourceUrl": "https://www.kaitaksportspark.com.hk/tc/promotion/5",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "d2-place",
+    "nameZh": "D2 Place（一期及二期）",
+    "nameEn": "D2 Place",
+    "addressZh": "九龍長沙灣長義街9號",
+    "region": "九龍",
+    "district": "深水埗區",
+    "lat": 22.3359746,
+    "lng": 114.1485957,
+    "hourly": "$23/小時（hkfreeparking 2026-08）；carparkhero載$25/小時、貨車$40/小時",
+    "consumptionFree": null,
+    "freeRulesText": null,
+    "notes": "消費優惠適用一期、二期或荔枝角道822號，最多2張收據（門檻未載明）；二期日泊$100（平日08:00–18:00，4/F）。",
+    "sourceUrl": "hkfreeparking更新10/8/2026。",
+    "verified": "https://www.d2place.com/parking",
+    "asOf": false
+  },
+  {
+    "id": "dragon-centre",
+    "nameZh": "西九龍中心",
+    "nameEn": "Dragon Centre",
+    "addressZh": "九龍深水埗欽州街37K號",
+    "region": "九龍",
+    "district": "深水埗區",
+    "lat": 22.3310175,
+    "lng": 114.1598202,
+    "hourly": "$27/小時（平日）；$29/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "最多累積5張收據，另送1小時下次使用泊車券（07:00–23:00入車）；夜泊21:00–08:00 $70。",
+    "notes": "hkfreeparking更新2/4/2026；carparkhero一致。",
+    "sourceUrl": "https://dragoncentre.com.hk/parking",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "v-walk",
+    "nameZh": "V Walk",
+    "nameEn": "V Walk",
+    "addressZh": "九龍深水埗深旺道28號",
+    "region": "九龍",
+    "district": "深水埗區",
+    "lat": 22.3270845,
+    "lng": 114.1543942,
+    "hourly": "$24/小時（平日）；$26/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "300",
+        "hours": "2"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "星期一至五（公眾假期除外）消費滿$800可享3小時。",
+    "notes": "hkfreeparking更新2/4/2026。",
+    "sourceUrl": "https://www.vwalk.com.hk/tch/access/parking",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "domain",
+    "nameZh": "大本型",
+    "nameEn": "Domain",
+    "addressZh": "九龍油塘高超道38號",
+    "region": "九龍",
+    "district": "觀塘區",
+    "lat": 22.2964354,
+    "lng": 114.23866,
+    "hourly": "$21/小時（平日）；$23/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "300",
+        "hours": "3"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "平日18:00–22:00入車且食肆單筆滿$100享額外1小時。",
+    "notes": "hkfreeparking更新10/8/2026。",
+    "sourceUrl": "https://www.domain-mall.hk/index.php/TC/transportation/parking-offers",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "kowloon-city-plaza",
+    "nameZh": "九龍城廣場",
+    "nameEn": "Kowloon City Plaza",
+    "addressZh": "九龍九龍城賈炳達道128號",
+    "region": "九龍",
+    "district": "九龍城區",
+    "lat": 22.3309857,
+    "lng": 114.1879624,
+    "hourly": "$28/小時（平日）；$30/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "0（星期一至五首小時毋須消費）",
+        "hours": "1"
+      }
+    ],
+    "freeRulesText": "任何顧客星期一至五使用停車場首一小時免費（拍卡出閘自動生效）；日泊$115（08:00–19:59）、夜泊$85（20:00–07:59）。",
+    "notes": "hkfreeparking更新7/8/2026。",
+    "sourceUrl": "https://www.kowlooncityplaza.com/carpark-detail?article_id=121",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "mei-foo",
+    "nameZh": "美孚新邨商場",
+    "nameEn": "Mei Foo Sun Chuen",
+    "addressZh": "九龍深水埗美孚荔灣道（美孚新邨）",
+    "region": "九龍",
+    "district": "深水埗區",
+    "lat": 22.337,
+    "lng": 114.137,
+    "hourly": "$30/小時（平日）；$32/小時（假日）",
+    "consumptionFree": null,
+    "freeRulesText": null,
+    "notes": "全日任泊$155（平日）/$165（假日），由入閘起至同日午夜。",
+    "sourceUrl": "未查到消費優惠；carparkhero更新20/4/2025。",
+    "verified": "https://www.carparkhero.com/car-park/mei-foo-sun-chuen-stage-4/",
+    "asOf": false
+  },
+  {
+    "id": "new-town-plaza",
+    "nameZh": "新城市廣場",
+    "nameEn": "New Town Plaza",
+    "addressZh": "新界沙田沙田正街18號（一期）",
+    "region": "新界",
+    "district": "沙田區",
+    "lat": 22.3817578,
+    "lng": 114.1886372,
+    "hourly": "$22/小時（平日）；$28/小時（假日）（hkfreeparking 2026-01；carparkhero 2024年載$26，或已加價）",
+    "consumptionFree": [
+      {
+        "spend": "300",
+        "hours": "2"
+      },
+      {
+        "spend": "500",
+        "hours": "3"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "700（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "100（平日指定餐飲及Movie Town，每滿）",
+        "hours": "1"
+      }
+    ],
+    "freeRulesText": "免費泊車優惠只限已登記The Point會員；平日最多5小時、假日最多4小時；「朝7晚10泊車賞」平日7am後指定餐飲及Movie Town單一消費每滿$100免1小時；粵車南下額外+2小時；積分換領2,000分=1小時。",
+    "notes": "夜泊21:00–07:00 $90。官方泊車服務頁已核實優惠結構；時租假日$28由hkfreeparking轉載。",
+    "sourceUrl": "https://www.newtownplaza.com.hk/zh-hant/parking-tc/",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "homesquare",
+    "nameZh": "HomeSquare",
+    "nameEn": "HomeSquare",
+    "addressZh": "新界沙田沙田鄉事會路138號",
+    "region": "新界",
+    "district": "沙田區",
+    "lat": 22.3852778,
+    "lng": 114.1877778,
+    "hourly": "$18/小時（平日）；$28/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "300",
+        "hours": "2"
+      },
+      {
+        "spend": "400",
+        "hours": "3"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "700（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "5pm後入車消費滿$200免2小時；星期六日可用新城市廣場消費單據；The Point會員制。",
+    "notes": "夜泊平日$60/假日$95（20:00–08:00）。hkfreeparking更新2/4/2026。",
+    "sourceUrl": "https://www.homesquare.com.hk/zh-hant/parking",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "shatin-centre",
+    "nameZh": "沙田中心",
+    "nameEn": "Shatin Centre",
+    "addressZh": "新界沙田橫壆街2-16號",
+    "region": "新界",
+    "district": "沙田區",
+    "lat": 22.3822587,
+    "lng": 114.1903925,
+    "hourly": "$22/小時（平日）；$28/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "250",
+        "hours": "1"
+      },
+      {
+        "spend": "450",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "每日消費滿$250免1小時、滿$450免2小時。",
+    "notes": "日泊$100（08:00–18:00）、夜泊$75（20:00–08:00）。hkfreeparking更新22/1/2026。",
+    "sourceUrl": "https://www.shatinplazacentre.com.hk/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "fortune-city-one",
+    "nameZh": "置富第一城中心",
+    "nameEn": "Fortune City One",
+    "addressZh": "新界沙田銀城街1-2號",
+    "region": "新界",
+    "district": "沙田區",
+    "lat": 22.3861716,
+    "lng": 114.2036629,
+    "hourly": "$24/小時（平日）；$26/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "消費換領免費泊車。",
+    "notes": "hkfreeparking更新7/8/2026。",
+    "sourceUrl": "https://www.fortunemalls.com.hk/tc/events/4/1",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "the-wai",
+    "nameZh": "圍方",
+    "nameEn": "The Wai",
+    "addressZh": "新界大圍車公廟路18號",
+    "region": "新界",
+    "district": "沙田區",
+    "lat": 22.373122,
+    "lng": 114.1799943,
+    "hourly": "$24/小時（平日）；$30/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "0（平日10:00–17:59餐飲消費）",
+        "hours": "2"
+      },
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "600（假日）",
+        "hours": "4"
+      },
+      {
+        "spend": "英皇戲院Plus+戲票2張",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "平日18:00後入車消費滿$200可享最高4小時；餐飲泊車禮遇只限週一至五；須透過MTR Mobile／L4/5自助換領站／L2顧客服務中心辦理；最多2張收據。",
+    "notes": "官方免費泊車頁已核實機制及門檻；時租由hkfreeparking轉載（9/8/2026）。",
+    "sourceUrl": "https://www.thewaimall.com/tch/promotions/free-parking-privilege",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "mostown",
+    "nameZh": "新港城中心",
+    "nameEn": "MOSTown",
+    "addressZh": "新界馬鞍山鞍祿街18號",
+    "region": "新界",
+    "district": "沙田區",
+    "lat": 22.4241633,
+    "lng": 114.2314688,
+    "hourly": "$25/小時（平日首兩小時）；$29/小時（假日首兩小時）；18:00–23:00進場其後每小時$10",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "600（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "2小時優惠需包含指定餐飲商戶消費；日泊$100（平日08:00–19:00）、夜泊$70（19:00–08:00）。",
+    "notes": "hkfreeparking更新22/1/2026。",
+    "sourceUrl": "https://www.mostown.com.hk/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "ma-on-shan-plaza",
+    "nameZh": "馬鞍山廣場",
+    "nameEn": "Ma On Shan Plaza",
+    "addressZh": "新界馬鞍山西沙路608號",
+    "region": "新界",
+    "district": "沙田區",
+    "lat": 22.4253222,
+    "lng": 114.2313931,
+    "hourly": "$19/小時（平日）；$24/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "另有「購物泊車優惠（任何消費額）」日泊優惠；星期五日泊$90、假日日泊$118。",
+    "notes": "hkfreeparking更新22/1/2026。",
+    "sourceUrl": "https://www.fortunemalls.com.hk/tc/events/3/1",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "tsuen-wan-plaza",
+    "nameZh": "荃灣廣場",
+    "nameEn": "Tsuen Wan Plaza",
+    "addressZh": "新界荃灣大壩街4-30號",
+    "region": "新界",
+    "district": "荃灣區",
+    "lat": 22.370821,
+    "lng": 114.1112277,
+    "hourly": "$18/小時（平日）；$25/小時（假日）；官方頁面另顯示優惠期時租$25/小時（需核實）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "The Point會員制（2023-09-01起）；即日指定餐飲商戶消費滿$200額外1小時；10:00–22:00換領；The Point積分可換領。",
+    "notes": "EV特快充電B2（CCS2）。官方頁面已讀（優惠機制核實）；時租門檻由hkfreeparking轉載（22/1/2026），假日$25與官方優惠期$25顯示有重疊，需到埗核實。",
+    "sourceUrl": "https://www.tsuenwanplaza.com.hk/tc/parking-tc/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "citywalk",
+    "nameZh": "荃新天地",
+    "nameEn": "Citywalk",
+    "addressZh": "新界荃灣楊屋道1號",
+    "region": "新界",
+    "district": "荃灣區",
+    "lat": 22.3696031,
+    "lng": 114.1136505,
+    "hourly": "$18/小時（平日）；$25/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "星期一至日及公眾假期消費滿$200免1小時、滿$400免2小時（最高2小時）；最多2張不同S⁺商戶即日電子收據；5pm後$100或以上電子消費收據額外1小時。",
+    "notes": "荃新天地1期1/F及2期B1/F設Shell Recharge DC充電。官方頁面已核實優惠；時租由carparkhero/hkfreeparking轉載。",
+    "sourceUrl": "https://www.citywalk.com.hk/tc/Parking",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "d-park",
+    "nameZh": "愉景新城",
+    "nameEn": "D·PARK",
+    "addressZh": "新界荃灣青山公路荃灣段398號",
+    "region": "新界",
+    "district": "荃灣區",
+    "lat": 22.3763951,
+    "lng": 114.111186,
+    "hourly": "$20/小時（平日）；$26/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "100",
+        "hours": "1"
+      },
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "300",
+        "hours": "3"
+      },
+      {
+        "spend": "400",
+        "hours": "4"
+      },
+      {
+        "spend": "500",
+        "hours": "5"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "只適用於如心賞會員。",
+    "notes": "hkfreeparking更新7/8/2026。",
+    "sourceUrl": "https://www.dpark.com.hk/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "nina-mall",
+    "nameZh": "如心廣場",
+    "nameEn": "Nina Mall",
+    "addressZh": "新界荃灣楊屋道8號",
+    "region": "新界",
+    "district": "荃灣區",
+    "lat": 22.368748,
+    "lng": 114.11299,
+    "hourly": "$18/小時（平日）；$25/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "100",
+        "hours": "2"
+      },
+      {
+        "spend": "200",
+        "hours": "3"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "每張發票扣除折扣／現金券後淨消費須滿$50；最多2張不同指定商戶即日電子消費單據；10:00–23:00於一期1樓或二期2樓禮賓部換領；二期夜泊21:00–08:00 $120。",
+    "notes": "hkfreeparking更新10/8/2026。",
+    "sourceUrl": "https://www.ninamall.com.hk/parking/?lang=zh-hant",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "kolour-tsuen-wan",
+    "nameZh": "荃灣千色匯（I & II）",
+    "nameEn": "KOLOUR‧Tsuen Wan",
+    "addressZh": "新界荃灣眾安街68號",
+    "region": "新界",
+    "district": "荃灣區",
+    "lat": 22.3706309,
+    "lng": 114.1176453,
+    "hourly": "$26/小時（平日首小時）；$31/小時（假日首小時）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "每日消費換領；最多累積2張收據；恒地會會員額外1小時；日泊$120（平日08:00–18:00）、夜泊$70（20:00–08:00）。",
+    "notes": "hkfreeparking更新10/8/2026。",
+    "sourceUrl": "https://tw.kolourmalls.com.hk/tc/parking.html",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "tmt-plaza",
+    "nameZh": "屯門市廣場",
+    "nameEn": "TMT Plaza",
+    "addressZh": "新界屯門屯順街1號",
+    "region": "新界",
+    "district": "屯門區",
+    "lat": 22.392892,
+    "lng": 113.9765076,
+    "hourly": "$19/小時（平日）；$27/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "500",
+        "hours": "1"
+      },
+      {
+        "spend": "800",
+        "hours": "2"
+      },
+      {
+        "spend": "800（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "1000（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "由2026-09-14起泊車優惠只限S⁺ REWARDS會員；最多3張不同商戶當日機印收據；同一交易最高4小時；於一期及三期停車場享用；App上載收據兌換。",
+    "notes": "官方泊車資訊頁已核實會員制及上限；門檻金額由hkfreeparking轉載（9/8/2026）。",
+    "sourceUrl": "https://www.tmtp.com.hk/tc/Parking",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "v-city",
+    "nameZh": "V city",
+    "nameEn": "V city",
+    "addressZh": "新界屯門屯門鄉事會路83號",
+    "region": "新界",
+    "district": "屯門區",
+    "lat": 22.3953878,
+    "lng": 113.9739331,
+    "hourly": "$18/小時（星期一至五，官方）；$26/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "700（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "900（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "會員憑即日電子消費換領（泊車優惠時段07:00–22:00）；指定食肆單一電子消費滿$200額外1小時（平日）；6:00–01:00開放。",
+    "notes": "官方頁面已核實平日時租及優惠結構；假日時租由hkfreeparking轉載。",
+    "sourceUrl": "https://www.vcity.com.hk/tch/parking/parking.jsp",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "yoho-mall",
+    "nameZh": "形點 YOHO MALL",
+    "nameEn": "YOHO MALL",
+    "addressZh": "新界元朗朗日路8-9號",
+    "region": "新界",
+    "district": "元朗區",
+    "lat": 22.445713,
+    "lng": 114.0353169,
+    "hourly": "$20/小時（平日，官方）；$26/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "500（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "100（指定食肆，每滿）",
+        "hours": "+2"
+      }
+    ],
+    "freeRulesText": "The Point會員換領（最多2張不同商舖即日電子發票）；指定食肆發票滿$100加2小時；YOHO MALL及YOHO MIX每日最高4小時；積分換領1小時=1,500分。",
+    "notes": "YOHO PLUS加點同區（元龍街9號），假日優惠更高（$300=5小時/$500=6小時）。官方頁面已核實。",
+    "sourceUrl": "https://www.yohomall.hk/zh-hk/driving-info",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "t-town",
+    "nameZh": "T Town（北翼及南翼）",
+    "nameEn": "T Town",
+    "addressZh": "新界天水圍天華路33及39號",
+    "region": "新界",
+    "district": "元朗區",
+    "lat": 22.4626737,
+    "lng": 113.9975904,
+    "hourly": "$22/小時（平日）；$26/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "300",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "每日消費滿$300免2小時（領展優惠）。",
+    "notes": "領展物業，兩翼收費相同；設領展EV充電。hkfreeparking更新7/8/2026。",
+    "sourceUrl": "https://www.linkhk.com/tc/parking/3306",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "tai-po-mega-mall",
+    "nameZh": "大埔超級城",
+    "nameEn": "Tai Po Mega Mall",
+    "addressZh": "新界大埔安邦路8-10號",
+    "region": "新界",
+    "district": "大埔區",
+    "lat": 22.4522921,
+    "lng": 114.1694304,
+    "hourly": "A–D區$18/小時（平日）、$24/小時（假日）；多層停車場$15/小時（平日）、$17/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "0（The Point會員免費1小時）",
+        "hours": "1"
+      }
+    ],
+    "freeRulesText": "The Point會員尊享免費泊車優惠（詳情宜向商場核實）。",
+    "notes": "A–D區與多層停車場收費不同。hkfreeparking更新19/1/2026。",
+    "sourceUrl": "https://taipomegamall.shkp.com/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "uptown-plaza",
+    "nameZh": "新達廣場",
+    "nameEn": "Uptown Plaza",
+    "addressZh": "新界大埔南運路9號",
+    "region": "新界",
+    "district": "大埔區",
+    "lat": 22.443554,
+    "lng": 114.169348,
+    "hourly": "$20/小時（平日）；$24/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "100",
+        "hours": "1"
+      },
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "300",
+        "hours": "3"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "$100免1小時只適用於零售商戶單一電子消費。",
+    "notes": "hkfreeparking更新22/1/2026。",
+    "sourceUrl": "https://www.uptownplaza.com.hk/parking/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "park-central",
+    "nameZh": "將軍澳中心",
+    "nameEn": "Park Central",
+    "addressZh": "新界將軍澳唐德街9號",
+    "region": "新界",
+    "district": "西貢區",
+    "lat": 22.3074503,
+    "lng": 114.2572761,
+    "hourly": "$20/小時（平日）；$22/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "300",
+        "hours": "2"
+      },
+      {
+        "spend": "500",
+        "hours": "3"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "600（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "12小時任泊：露天$90／室內$110；24小時任泊：露天$120／室內$140；PopFood及PopDeli單據只限換領將軍澳中心商場優惠。",
+    "notes": "官方頁面已讀（收費及12/24小時泊）；消費門檻由hkfreeparking轉載（23/1/2026）。",
+    "sourceUrl": "https://www.park-central.com.hk/tc-parking-service/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "popcorn",
+    "nameZh": "PopCorn",
+    "nameEn": "PopCorn",
+    "addressZh": "新界將軍澳唐賢街9號",
+    "region": "新界",
+    "district": "西貢區",
+    "lat": 22.307805,
+    "lng": 114.2595478,
+    "hourly": "$20/小時",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "平日10:00–17:59餐飲任何消費=2小時；平日18:00後$200最多4小時；夜泊20:00–08:00 $100。",
+    "notes": "MTR商場。hkfreeparking更新23/1/2026。",
+    "sourceUrl": "https://www.popcorntko.com.hk/tch/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "east-point-city",
+    "nameZh": "東港城",
+    "nameEn": "East Point City",
+    "addressZh": "新界將軍澳重華路8號",
+    "region": "新界",
+    "district": "西貢區",
+    "lat": 22.3169972,
+    "lng": 114.2654283,
+    "hourly": "$20/小時（平日）；$22/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "300",
+        "hours": "2"
+      },
+      {
+        "spend": "500",
+        "hours": "3"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "600（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "所有泊車優惠只適用於The Point會員；銀聯卡/SmarTone Plus會員或額外1小時；設港鐵轉乘泊車優惠。",
+    "notes": "官方頁面已讀（The Point會員制核實）；金額由hkfreeparking轉載（22/1/2026）。",
+    "sourceUrl": "https://www.eastpointcity.com.hk/parking-2/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "the-lohas",
+    "nameZh": "The LOHAS 康城",
+    "nameEn": "The LOHAS",
+    "addressZh": "新界將軍澳康城路1號",
+    "region": "新界",
+    "district": "西貢區",
+    "lat": 22.2964085,
+    "lng": 114.2705588,
+    "hourly": "$22/小時",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "400",
+        "hours": "3"
+      },
+      {
+        "spend": "0（平日10:00–17:59任何餐飲）",
+        "hours": "2"
+      },
+      {
+        "spend": "英皇戲院戲票2張",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "星期一至日及公眾假期消費滿$200免2小時、滿$400免3小時；最多4小時；須MTR Mobile會員；只接受信用卡及八達通入閘；00:00–06:59入車不適用。",
+    "notes": "官方免費泊車頁已核實機制；時租及部分門檻由hkfreeparking轉載（23/1/2026）。",
+    "sourceUrl": "https://www.thelohasmall.com/tch/promotions/free-parking-privilege",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "metro-town",
+    "nameZh": "都會駅",
+    "nameEn": "Metro Town",
+    "addressZh": "新界將軍澳調景嶺（調景嶺站上蓋）",
+    "region": "新界",
+    "district": "西貢區",
+    "lat": 22.303,
+    "lng": 114.258,
+    "hourly": "$25/小時（平日）；$27/小時（假日）",
+    "consumptionFree": null,
+    "freeRulesText": null,
+    "notes": "貨車上落貨$30/小時。",
+    "sourceUrl": "未查到消費優惠；carparkhero更新15/6/2024。",
+    "verified": "https://www.carparkhero.com/car-park/metro-town/",
+    "asOf": false
+  },
+  {
+    "id": "maritime-square",
+    "nameZh": "青衣城",
+    "nameEn": "Maritime Square",
+    "addressZh": "新界青衣青敬路33號",
+    "region": "新界",
+    "district": "葵青區",
+    "lat": 22.3584265,
+    "lng": 114.1081419,
+    "hourly": "$19/小時（hkfreeparking/carparkhero）；日泊$100、夜泊$90（官方頁面時段價）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "200（假日）",
+        "hours": "1"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "0（平日10:00–17:59任何餐飲）",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "MTR Mobile會員制；平日18:00後$200可享最多4小時；Caltex加FUN咭／能源咭額外1小時（至3月31）；2期貨車$25/小時。",
+    "notes": "EV：DC $3/kWh、AC $2.6/kWh。官方泊車頁已讀；時租及門檻部分由hkfreeparking轉載（23/1/2026）。",
+    "sourceUrl": "https://www.maritimesquare.com/tch/parking",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "metroplaza",
+    "nameZh": "新都會廣場",
+    "nameEn": "Metroplaza",
+    "addressZh": "新界葵芳興芳路223號",
+    "region": "新界",
+    "district": "葵青區",
+    "lat": 22.3574364,
+    "lng": 114.1266565,
+    "hourly": "$20/小時（平日）；$25/小時（假日）；23:00–07:00 $8/小時",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "1"
+      },
+      {
+        "spend": "400",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "17:00–21:00食肆消費$100額外1小時；最多2張不同商舖收據。",
+    "notes": "hkfreeparking更新26/1/2026。",
+    "sourceUrl": "https://www.metroplaza.com.hk/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "citygate-outlets",
+    "nameZh": "東薈城名店倉",
+    "nameEn": "Citygate Outlets",
+    "addressZh": "新界東涌達東路20號",
+    "region": "新界",
+    "district": "離島區",
+    "lat": 22.289733,
+    "lng": 113.9412938,
+    "hourly": "$20/小時（carparkhero）；hkfreeparking載$22/小時",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "400",
+        "hours": "3"
+      },
+      {
+        "spend": "400（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "優惠只適用P2及P3停車場（不適用P1）；至2026-10-31早上7時至下午6時電子消費滿指定金額額外1小時；CLUB CG會員免觸式泊車。",
+    "notes": "Tesla Supercharger V2/V4設於場內。官方免費泊車頁已核實推廣期及P2/P3限制；門檻由hkfreeparking轉載（22/1/2026）。",
+    "sourceUrl": "https://www.citygateoutlets.com.hk/zh-hk/offer-events/events/parking_offers/",
+    "verified": true,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "landmark-north",
+    "nameZh": "上水廣場",
+    "nameEn": "Landmark North",
+    "addressZh": "新界上水龍琛路39號",
+    "region": "新界",
+    "district": "北區",
+    "lat": 22.5025848,
+    "lng": 114.1279107,
+    "hourly": "$22/小時（平日）；$25/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "200",
+        "hours": "2"
+      },
+      {
+        "spend": "400",
+        "hours": "3"
+      },
+      {
+        "spend": "300（假日）",
+        "hours": "2"
+      },
+      {
+        "spend": "600（假日）",
+        "hours": "3"
+      }
+    ],
+    "freeRulesText": "亦可以The Point積分換領（平日2,000分=1小時等）；09:00–22:00入車優惠時段。",
+    "notes": "hkfreeparking更新19/1/2026；carparkhero一致。",
+    "sourceUrl": "https://www.landmarknorth.com.hk/tc/transport/parking",
+    "verified": false,
+    "asOf": "2026-10-25"
+  },
+  {
+    "id": "sheung-shui-centre",
+    "nameZh": "上水中心",
+    "nameEn": "Sheung Shui Centre",
+    "addressZh": "新界上水智昌路3號",
+    "region": "新界",
+    "district": "北區",
+    "lat": 22.5008858,
+    "lng": 114.1299577,
+    "hourly": "$24/小時（平日）；$27/小時（假日）",
+    "consumptionFree": [
+      {
+        "spend": "150",
+        "hours": "1"
+      },
+      {
+        "spend": "300",
+        "hours": "2"
+      }
+    ],
+    "freeRulesText": "每日消費滿$150免1小時、滿$300免2小時。",
+    "notes": "hkfreeparking更新7/8/2026。",
+    "sourceUrl": "https://www.sheungshuicentre.com/parking/",
+    "verified": false,
+    "asOf": "2026-10-25"
+  }
+]
