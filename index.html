@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>🅿️ 實時停車場 · 港九新界</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{
+  color-scheme: light dark;
+  --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+  --line:#e1e0d9; --ring:rgba(11,11,11,.10);
+  --good:#0ca30c; --warn:#fab219; --serious:#ec835a; --critical:#d03b3b;
+  --accent:#2a78d6;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+    --line:#2c2c2a; --ring:rgba(255,255,255,.10); --accent:#3987e5; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);
+  font-family:system-ui,-apple-system,"Segoe UI","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:15px;line-height:1.45;}
+main{max-width:760px;margin:0 auto;padding:0 12px 48px}
+header{max-width:760px;margin:0 auto;padding:18px 12px 10px;display:flex;align-items:baseline;gap:10px}
+header h1{font-size:20px;margin:0;white-space:nowrap}
+header .sub{color:var(--ink2);font-size:12.5px}
+header .home{margin-left:auto;text-decoration:none;font-size:15px;color:var(--ink2)}
+
+.panel{background:var(--surface);border:1px solid var(--ring);border-radius:14px;padding:12px;margin-top:8px}
+.search-row{display:flex;gap:8px}
+#q{flex:1;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:var(--page);
+  color:var(--ink);font-size:15.5px;outline:none}
+#q:focus{border-color:var(--accent)}
+#locbtn{padding:0 13px;border:1px solid var(--line);border-radius:10px;background:var(--page);cursor:pointer;font-size:16px}
+#suggest{position:relative;z-index:20}
+.sug{position:absolute;left:0;right:0;top:4px;background:var(--surface);border:1px solid var(--ring);
+  border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.14);overflow:hidden;max-height:290px;overflow-y:auto}
+.sug button{display:block;width:100%;text-align:left;padding:10px 13px;border:0;background:none;
+  cursor:pointer;font-size:14.5px;color:var(--ink);border-bottom:1px solid var(--line)}
+.sug button:last-child{border-bottom:0}
+.sug button:hover,.sug button:focus{background:var(--page)}
+.sug .d{color:var(--muted);font-size:12px}
+.controls{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{padding:6px 11px;border-radius:999px;border:1px solid var(--line);background:var(--page);
+  color:var(--ink2);cursor:pointer;font-size:13px}
+.chip.on{background:var(--ink);color:var(--surface);border-color:var(--ink);font-weight:600}
+.sort{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:13px;color:var(--ink2)}
+.sort select{padding:5px 8px;border-radius:8px;border:1px solid var(--line);background:var(--page);color:var(--ink)}
+.meta-row{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:12.5px;color:var(--muted)}
+#refresh{border:1px solid var(--line);background:var(--page);border-radius:8px;padding:3px 9px;cursor:pointer;color:var(--ink2)}
+.viewtoggle{margin-left:auto;display:flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.viewtoggle button{border:0;background:var(--page);padding:5px 13px;cursor:pointer;color:var(--ink2);font-size:13px}
+.viewtoggle button.on{background:var(--ink);color:var(--surface);font-weight:600}
+#banner{margin-top:10px}
+.banner{padding:9px 12px;border-radius:10px;font-size:13.5px;background:var(--page);border:1px solid var(--serious);color:var(--ink2)}
+.banner b{color:var(--critical)}
+
+#list{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.card{background:var(--surface);border:1px solid var(--ring);border-radius:14px;padding:13px 14px}
+.row1{display:flex;gap:10px;align-items:flex-start}
+.nm b{font-size:16px}
+.nm .en{display:block;color:var(--muted);font-size:12px;margin-top:1px}
+.malltag{display:inline-block;margin-left:6px;font-size:11px;background:var(--page);border:1px solid var(--line);
+  border-radius:6px;padding:1px 6px;color:var(--ink2);vertical-align:2px}
+.badge{margin-left:auto;flex-shrink:0;padding:4px 10px;border-radius:999px;font-size:12.5px;font-weight:600;white-space:nowrap}
+.badge.good{background:var(--good);color:#fff}
+.badge.warn{background:var(--warn);color:#0b0b0b}
+.badge.serious{background:var(--serious);color:#fff}
+.badge.critical{background:var(--critical);color:#fff}
+.badge.none{background:var(--page);color:var(--muted);border:1px solid var(--line)}
+.row2{color:var(--ink2);font-size:13px;margin-top:6px}
+.row2 .d{color:var(--accent);font-weight:600}
+.fees{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.fee{font-size:13px;background:var(--page);border:1px solid var(--line);border-radius:8px;padding:5px 9px;color:var(--ink)}
+.fee.none{color:var(--muted)}
+.fee a{color:var(--accent)}
+.row3{display:flex;align-items:center;gap:10px;margin-top:9px;font-size:12px;color:var(--muted)}
+.row3 .nav{margin-left:auto;text-decoration:none;color:var(--accent);font-weight:600;font-size:13px}
+.note{font-size:12px;color:var(--muted);margin-top:5px}
+
+.hint{background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:22px;text-align:center;color:var(--ink2)}
+.hint .ex{display:inline-block;margin:4px 4px 0;padding:4px 10px;border:1px solid var(--line);border-radius:999px;
+  font-size:13px;color:var(--accent);cursor:pointer;background:var(--page)}
+.count{color:var(--muted);font-size:12.5px;margin:14px 2px 0}
+#mapwrap{display:none;margin-top:14px;border:1px solid var(--ring);border-radius:14px;overflow:hidden}
+#map{height:min(62vh,520px)}
+#list.mapmode{display:none}
+#mapwrap.mapmode{display:block}
+footer{margin-top:26px;color:var(--muted);font-size:12px;line-height:1.6}
+footer a{color:var(--muted)}
+@media (max-width:520px){ .sort{margin-left:0} }
+</style>
+</head>
+<body>
+<header>
+  <h1>🅿️ 實時停車場</h1>
+  <span class="sub">港九新界 · 時租／消費免泊 · 即時車位</span>
+  <a class="home" href="https://leunghlk.github.io/all-in-one/" title="返回主頁">🏠</a>
+</header>
+<main>
+  <section class="panel">
+    <div class="search-row">
+      <input id="q" placeholder="搵目的地：商場／大廈／港鐵站…（例：時代廣場、新城市廣場）" autocomplete="off" aria-label="搵目的地">
+      <button id="locbtn" title="用我嘅位置">📍</button>
+    </div>
+    <div id="suggest"></div>
+    <div class="controls">
+      <div class="chips" id="radiusChips"></div>
+      <div class="chips" id="filterChips"></div>
+      <label class="sort">排序
+        <select id="sortBy">
+          <option value="dist">距離近→遠</option>
+          <option value="vac">剩餘車位多→少</option>
+        </select>
+      </label>
+    </div>
+    <div class="meta-row">
+      <span id="liveStatus">實時車位數據載入中…</span>
+      <button id="refresh" title="立即刷新">↻</button>
+      <div class="viewtoggle">
+        <button id="vList" class="on">列表</button>
+        <button id="vMap">地圖</button>
+      </div>
+    </div>
+    <div id="banner"></div>
+  </section>
+  <div class="count" id="count"></div>
+  <section id="list"></section>
+  <section id="mapwrap"><div id="map"></div></section>
+  <footer>
+    資料來源：<a href="https://data.gov.hk/en-data/dataset/hk-td-tis_5-real-time-parking-vacancy-data" target="_blank" rel="noopener">運輸署・實時泊車位空置數據（資料一線通）</a>
+    ＋車場基本資料。商場時租／消費免泊規則為人工整理（每項附來源及日期），<b>以現場公告為準</b>。<span id="buildDate"></span><br>
+    實時空置只覆蓋有參與開放數據嘅停車場；大型私人商場多數冇開放實時數據，會顯示「冇實時數」。
+  </footer>
+</main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+'use strict';
+const TD_VACANCY = 'https://resource.data.one.gov.hk/td/carpark/vacancy_all.json';
+const STALE_MIN = 120;
+const WALK_SPEED = 80; // m per min
+
+let PARKS = [], VAC = {}, dest = null, radius = 1000, filter = 'all', sortBy = 'dist';
+let map, markerLayer, destMarker, lastFetch = null, vacTimer = null;
+
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function haversine(a, b){
+  const R=6371000, r=Math.PI/180;
+  const dLa=(b.lat-a.lat)*r, dLo=(b.lng-a.lng)*r;
+  const h=Math.sin(dLa/2)**2 + Math.cos(a.lat*r)*Math.cos(b.lat*r)*Math.sin(dLo/2)**2;
+  return 2*R*Math.asin(Math.sqrt(h));
+}
+
+/* ---------- vacancy ---------- */
+async function fetchVacancy(manual){
+  const st = $('#liveStatus');
+  st.textContent = '實時車位數據載入中…';
+  try{
+    const r = await fetch(TD_VACANCY + '?t=' + Date.now());
+    if(!r.ok) throw new Error('HTTP ' + r.status);
+    // TD files start with a UTF-8 BOM — r.json() chokes on it, so strip first
+    const j = JSON.parse((await r.text()).replace(/^﻿/, ''));
+    VAC = parseVacancy(j);
+    lastFetch = new Date();
+    const n = Object.keys(VAC).length;
+    st.textContent = '⏱ 實時更新 ' + lastFetch.toLocaleTimeString('zh-HK',{hour12:false}) + ' · ' + n + ' 場';
+    hideBanner(); render();
+  }catch(e){
+    st.textContent = '⚠️ 實時數據拉唔到';
+    showBanner('<b>實時車位數據暫時拉唔到</b>（' + esc(e.message) + '）— 照樣顯示收費資料，可以稍後撳 ↻ 重試。');
+    if(manual) render();
+  }
+}
+function parseVacancy(j){
+  const out = {};
+  for(const cp of (j.car_park || [])){
+    const vts = cp.vehicle_type || [];
+    const vt = vts.find(v => v.type === 'P') || vts[0];
+    if(!vt) continue;
+    const cats = vt.service_category || [];
+    const sc = cats.find(s => s.category === 'HOURLY') || cats[0];
+    if(!sc) continue;
+    out[cp.park_id] = { t: sc.vacancy_type, v: sc.vacancy, ts: sc.lastupdate };
+  }
+  return out;
+}
+function ageMin(ts){
+  if(!ts) return null;
+  const t = new Date(ts.replace(' ', 'T') + '+08:00'); // TD lastupdate is HKT local
+  if(isNaN(t)) return null;
+  return Math.max(0, (Date.now() - t.getTime()) / 60000);
+}
+function vacInfo(c){
+  const e = VAC[c.id];
+  if(!e) return { cls:'none', text:'冇實時數', age:null };
+  const age = ageMin(e.ts);
+  const stale = age != null && age > STALE_MIN;
+  let text;
+  if(e.t === 'C') text = '⛔ 已關閉';
+  else if(e.t === 'B') text = e.v > 0 ? '🟢 有位' : '🔴 全滿';
+  else if(e.v < 0) text = '冇實時數';
+  else if(e.v === 0) text = '🔴 全滿';
+  else if(e.v <= 5) text = '🟠 僅剩 ' + e.v;
+  else if(e.v <= 20) text = '🟡 剩 ' + e.v;
+  else text = '🟢 剩 ' + e.v;
+  const cls = stale ? 'none' : (e.t==='C' ? 'none' : e.v===0 ? 'critical' : e.v<=5 ? 'serious' : e.v<=20 ? 'warn' : 'good');
+  return { cls, text: stale ? '⏳ 過時 ' + text.replace(/^\S+\s/,'') : text, age };
+}
+function vacRank(c){
+  const e = VAC[c.id];
+  if(!e) return -2;
+  const stale = (ageMin(e.ts) ?? 1e9) > STALE_MIN;
+  if(stale || e.t === 'C') return -2;
+  if(e.t === 'B') return e.v > 0 ? 999 : 0;
+  return e.v < 0 ? -2 : e.v;
+}
+
+/* ---------- rendering ---------- */
+function computeList(){
+  if(!dest) return [];
+  let arr = PARKS.map(c => ({ c, d: haversine(dest, c) })).filter(x => x.d <= radius);
+  if(filter === 'mall') arr = arr.filter(x => x.c.mall);
+  if(filter === 'live') arr = arr.filter(x => vacRank(x.c) >= -1);
+  if(filter === 'free') arr = arr.filter(x => x.c.consumptionFree && x.c.consumptionFree.length);
+  if(sortBy === 'vac') arr.sort((a,b) => vacRank(b.c) - vacRank(a.c) || a.d - b.d);
+  else arr.sort((a,b) => a.d - b.d);
+  return arr;
+}
+function freeText(c){
+  if(c.freeRulesText) return c.freeRulesText;
+  const rs = c.consumptionFree || [];
+  if(!rs.length) return '';
+  return rs.slice(0,3).map(r => '滿$' + r.spend + ' → 免費 ' + r.hours + ' 小時').join('；') + (rs.length > 3 ? '…' : '');
+}
+function distTxt(d){ return d < 1000 ? Math.round(d) + 'm' : (d/1000).toFixed(1) + 'km'; }
+function cardHTML(x){
+  const c = x.c, vi = vacInfo(c);
+  const name = c.name_tc || c.name_en, en = (c.name_tc && c.name_en) ? c.name_en : '';
+  const addr = c.addr_tc || c.addr_en || (c.district_tc ? c.district_tc + '區' : '');
+  const fees = [];
+  if(c.hourly) fees.push('<span class="fee">🕐 時租 ' + esc(c.hourly) + '</span>');
+  const ft = freeText(c);
+  if(ft) fees.push('<span class="fee">🧾 ' + esc(ft) + '</span>');
+  if(!fees.length){
+    fees.push('<span class="fee none">🕐 收費未有資料' + (c.website ? ' · <a href="' + esc(c.website) + '" target="_blank" rel="noopener">收費網頁</a>' : '') + '</span>');
+  }
+  const ts = vi.age != null ? '實時更新 ' + esc((c.id in VAC && VAC[c.id].ts) || '—') : '實時：不適用';
+  return '<div class="card">' +
+    '<div class="row1"><div class="nm"><b>' + esc(name) + '</b>' + (c.mall ? '<span class="malltag">🏬 商場</span>' : '') +
+    (en ? '<span class="en">' + esc(en) + '</span>' : '') + '</div>' +
+    '<span class="badge ' + vi.cls + '">' + vi.text + '</span></div>' +
+    '<div class="row2">' + esc(addr) + (addr ? ' · ' : '') + '<span class="d">' + distTxt(x.d) + '</span> · 步行約 ' + Math.max(1, Math.round(x.d / WALK_SPEED)) + ' 分鐘' +
+    (c.height ? ' · 限高 ' + c.height + 'm' : '') + '</div>' +
+    '<div class="fees">' + fees.join('') + '</div>' +
+    (c.mallNotes ? '<div class="note">' + esc(c.mallNotes) + '</div>' : '') +
+    '<div class="row3"><span>' + ts + (c.contact ? ' · ☎ ' + esc(c.contact) : '') + '</span>' +
+    '<a class="nav" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + c.lat + ',' + c.lng + '">導航 →</a></div>' +
+    '</div>';
+}
+function render(){
+  const listEl = $('#list'), countEl = $('#count');
+  if(!dest){
+    listEl.innerHTML = '<div class="hint">搵個目的地開始 — 輸入商場／大廈／港鐵站，或撳 📍 用而家位置。<br>' +
+      '例：<span class="ex" data-q="時代廣場">時代廣場</span><span class="ex" data-q="新城市廣場">新城市廣場</span><span class="ex" data-q="尖沙咀">尖沙咀</span></div>';
+    countEl.textContent = '';
+    bindExamples();
+    if(markerLayer){ markerLayer.clearLayers(); if(destMarker) map.removeLayer(destMarker); destMarker = null; }
+    return;
+  }
+  const arr = computeList();
+  countEl.textContent = '「' + dest.name + '」附近 ' + distTxt(radius) + ' 內：' + arr.length + ' 個停車場';
+  listEl.innerHTML = arr.length
+    ? arr.slice(0, 40).map(cardHTML).join('') + (arr.length > 40 ? '<div class="hint">淨返 ' + (arr.length-40) + ' 個冇顯示 — 可以收窄半徑。</div>' : '')
+    : '<div class="hint">呢個範圍搵唔到停車場 — 試下拉闊半徑。</div>';
+  renderMap(arr);
+}
+function renderMap(arr){
+  if(!map){
+    map = L.map('map', { zoomControl: true });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OpenStreetMap' }).addTo(map);
+    markerLayer = L.layerGroup().addTo(map);
+  }
+  setTimeout(() => map.invalidateSize(), 50);
+  markerLayer.clearLayers();
+  if(destMarker){ map.removeLayer(destMarker); destMarker = null; }
+  if(!dest) return;
+  const colors = { good:'#0ca30c', warn:'#fab219', serious:'#ec835a', critical:'#d03b3b', none:'#898781' };
+  const pts = [[dest.lat, dest.lng]];
+  destMarker = L.marker([dest.lat, dest.lng], { icon: L.divIcon({ html:'📍', className:'', iconSize:[26,26], iconAnchor:[13,24] }) }).addTo(map);
+  for(const x of arr.slice(0, 40)){
+    const vi = vacInfo(x.c), name = x.c.name_tc || x.c.name_en;
+    const m = L.circleMarker([x.c.lat, x.c.lng], { radius:9, color:'#fcfcfb', weight:2, fillColor:colors[vi.cls], fillOpacity:.95 });
+    m.bindTooltip('<b>' + esc(name) + '</b><br>' + vi.text + ' · ' + distTxt(x.d));
+    m.bindPopup('<b>' + esc(name) + '</b><br>' + vi.text + '<br>' +
+      (x.c.hourly ? '🕐 時租 ' + esc(x.c.hourly) + '<br>' : '') +
+      (freeText(x.c) ? '🧾 ' + esc(freeText(x.c)) + '<br>' : '') +
+      '<a href="https://www.google.com/maps/dir/?api=1&destination=' + x.c.lat + ',' + x.c.lng + '" target="_blank" rel="noopener">導航 →</a>');
+    m.addTo(markerLayer);
+    pts.push([x.c.lat, x.c.lng]);
+  }
+  map.fitBounds(L.latLngBounds(pts).pad(0.25));
+}
+
+/* ---------- search ---------- */
+let sugTimer = null, sugCtl = null;
+$('#q').addEventListener('input', e => {
+  clearTimeout(sugTimer);
+  const q = e.target.value.trim();
+  if(q.length < 2){ $('#suggest').innerHTML = ''; return; }
+  sugTimer = setTimeout(() => suggest(q), 280);
+});
+async function suggest(q){
+  if(sugCtl) sugCtl.abort();
+  sugCtl = new AbortController();
+  const local = localMatches(q);
+  try{
+    const r = await fetch('https://photon.komoot.io/api/?q=' + encodeURIComponent(q) +
+      '&lat=' + (dest ? dest.lat : 22.35) + '&lon=' + (dest ? dest.lng : 114.15) +
+      '&limit=8&lang=default', { signal: sugCtl.signal });
+    const j = await r.json();
+    const remote = (j.features || []).map(f => ({
+      name: f.properties.name || q,
+      sub: [f.properties.street, f.properties.district, f.properties.city].filter(Boolean).join(' · '),
+      lat: f.geometry.coordinates[1], lng: f.geometry.coordinates[0]
+    })).filter(p => p.lat && p.lng);
+    showSug(remote.map(p => ({...p, icon:'📍'})).concat(local));
+  }catch(err){
+    if(err.name !== 'AbortError') showSug(local);
+  }
+}
+function localMatches(q){
+  const nq = q.toLowerCase();
+  return PARKS.filter(c => (c.name_tc || '').toLowerCase().includes(nq) || (c.name_en || '').toLowerCase().includes(nq))
+    .slice(0, 5).map(c => ({ name: c.name_tc || c.name_en, sub: c.addr_tc || c.addr_en || '', lat: c.lat, lng: c.lng, icon: '🅿️' }));
+}
+function showSug(items){
+  if(!items.length){ $('#suggest').innerHTML = ''; return; }
+  $('#suggest').innerHTML = '<div class="sug">' + items.slice(0, 12).map((p, i) =>
+    '<button data-i="' + i + '"><span>' + p.icon + ' ' + esc(p.name) + '</span>' +
+    (p.sub ? '<span class="d"> ' + esc(p.sub) + '</span>' : '') + '</button>').join('') + '</div>';
+  $('#suggest').querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+    const p = items[+b.dataset.i];
+    setDest({ name: p.name, lat: p.lat, lng: p.lng });
+    $('#suggest').innerHTML = '';
+  }));
+}
+document.addEventListener('click', e => { if(!e.target.closest('#suggest') && !e.target.closest('#q')) $('#suggest').innerHTML = ''; });
+
+function setDest(d){
+  dest = d;
+  $('#q').value = d.name;
+  render();
+}
+
+/* ---------- controls ---------- */
+const RADII = [[500,'500m'],[1000,'1km'],[2000,'2km'],[3000,'3km']];
+$('#radiusChips').innerHTML = RADII.map(([v,l]) => '<button class="chip' + (v===1000?' on':'') + '" data-v="' + v + '">' + l + '</button>').join('');
+$('#radiusChips').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if(!b) return;
+  radius = +b.dataset.v;
+  $('#radiusChips').querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c === b));
+  render();
+});
+const FILTERS = [['all','全部'],['mall','🏬 商場'],['live','📶 得實時位'],['free','🧾 消費免泊']];
+$('#filterChips').innerHTML = FILTERS.map(([v,l]) => '<button class="chip' + (v==='all'?' on':'') + '" data-v="' + v + '">' + l + '</button>').join('');
+$('#filterChips').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if(!b) return;
+  filter = b.dataset.v;
+  $('#filterChips').querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c === b));
+  render();
+});
+$('#sortBy').addEventListener('change', e => { sortBy = e.target.value; render(); });
+$('#refresh').addEventListener('click', () => { fetchVacancy(true); });
+$('#locbtn').addEventListener('click', () => {
+  if(!navigator.geolocation) return;
+  navigator.geolocation.getCurrentPosition(
+    p => setDest({ name: '我嘅位置', lat: p.coords.latitude, lng: p.coords.longitude }),
+    () => showBanner('<b>攞唔到位置</b> — 請允許瀏覽器使用定位，或者直接搵地方。'));
+});
+$('#vList').addEventListener('click', () => setView(false));
+$('#vMap').addEventListener('click', () => setView(true));
+function setView(mapMode){
+  $('#list').classList.toggle('mapmode', mapMode);
+  $('#mapwrap').classList.toggle('mapmode', mapMode);
+  $('#vList').classList.toggle('on', !mapMode);
+  $('#vMap').classList.toggle('on', mapMode);
+  if(mapMode && map){ map.invalidateSize(); }
+}
+function bindExamples(){
+  document.querySelectorAll('.ex').forEach(el => el.addEventListener('click', () => {
+    $('#q').value = el.dataset.q;
+    suggest(el.dataset.q);
+  }));
+}
+function showBanner(html){ $('#banner').innerHTML = '<div class="banner">' + html + '</div>'; }
+function hideBanner(){ $('#banner').innerHTML = ''; }
+
+/* ---------- init ---------- */
+fetch('data/carparks.json').then(r => r.json()).then(j => {
+  PARKS = j.carparks || [];
+  if(j.updated) $('#buildDate').textContent = '（主檔更新：' + j.updated + '）';
+  render();
+});
+fetchVacancy(false);
+vacTimer = setInterval(() => fetchVacancy(false), 180000);
+</script>
+</body>
+</html>
